@@ -1,0 +1,251 @@
+
+/******************************************/
+/*Staff*/
+/******************************************/
+.staff-content {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem;
+}
+.staff-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    color: white;
+    flex: 2;
+}
+.staff-title h1{
+    font-family: 'Futura-Bold',sans-serif;
+    font-size: 2rem;
+}
+.staff-title p{
+    font-family: 'Futura-Light',sans-serif;
+    font-size: 1.2rem;
+    width: 78%;
+    text-align: center;
+}
+.staff-middle{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex:1;
+}
+.staff-middle p{
+    color: white;
+    font-family: 'Futura-Demi',sans-serif;
+    
+}
+.staff-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.staff-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(180deg,rgba(var(--primary-rgb))0%,rgba(var(--secondary-rgb))100%);
+}
+    
+.staff-position{
+    color: white;
+    font-family: 'Futura-Demi',sans-serif;
+    text-align: center;
+}
+.staff-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    flex: 4;
+}
+@media(max-width:768px){
+    .staff-content{
+        flex-direction: column;
+    }
+    .staff-title h1{
+        font-size: 3rem;
+        margin:0 0 1rem 0;
+    }
+    .staff-title p{
+        font-size: 1.5rem;
+    }
+    .staff-right{
+        grid-template-columns: 1fr 1fr;
+    }
+    .staff-image{
+        height: 150px;
+        width: 150px;
+    }
+}
+/******************************************/
+/*values */
+/******************************************/
+.values-content{
+    max-width: 100%;
+    height:fit-content;
+}
+.values-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+.values-header h1{
+    color: blue;
+    font-family: 'Futura-Bold',sans-serif;
+    font-size: 3rem;
+    margin: 0 0 40px 0;
+}
+.values-header ul{
+    text-align: left;
+    width:38%;
+}
+.values-header li{
+    list-style-type: disc;
+    font-family: 'Futura-Book',sans-serif;
+    font-size: 1.5rem;
+}
+.more-values{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.teamwork{
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem 3rem 4rem;
+    gap: 20px;
+}
+.teamwork-image{
+    border-radius: 5%;
+    background-image: url(images/graphic\ design.jpg);
+    background-position: center;
+    background-size: contain;
+    margin: 50px 0 0 0;
+    height:18rem;
+}
+.teamwork-text {
+    color: white;
+}
+.teamwork-text h1{
+    font-family: 'Futura-Bold',sans-serif;
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+}
+.teamwork-text p{
+    font-family: 'Futura-Book',sans-serif;
+    font-size: 1.1rem;
+    text-align: left;
+    width: 92%;
+}
+.customer-service{
+    background-color: var(--primary-color);
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.customer-service p{
+    color: white;
+    font-family: 'Futura-Light',sans-serif;
+    font-size: 1.2rem;
+}
+@media(max-width:768px){
+    .values-header h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+    .values-header ul{
+        width: 100%;
+    }
+    .more-values{
+        display: flex;
+        flex-direction: column;
+    }
+    .teamwork{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+    .customer-service{
+        padding: 2rem 2rem;
+    }
+}
+/******************************************/
+/*Social Duty*/
+/******************************************/
+.social-duty{
+    background: url(images/blackbg@4x-8.png);
+    background-position: center;
+    background-size: contain;
+}
+.social-duty-content{
+    max-width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 4rem 7rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.social-duty-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.social-duty-text h1{
+    font-family: 'Futura-Bold', sans-serif;
+    font-size: 3rem;
+    color: var(--primary-color);
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.social-duty-content p{
+    font-family: 'Futura-Light', sans-serif;
+    font-size: 1rem;
+    width: 80%;
+}
+
+.social-duty-image{
+    background: url(images/world1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.social-duty-image img{
+    display: none;
+}
+@media(max-width:768px){
+ .social-duty{
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .social-duty-content{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    height: fit-content;
+ }
+ .social-duty-text h1{
+    font-size: 2.5rem;
+ }
+ .social-duty-text p{
+    width: 100%;
+ }
+ .social-duty-image{
+    background: none;
+ }
+ .social-duty-image img{
+    display: block;
+    height: 360px;
+ }
+}

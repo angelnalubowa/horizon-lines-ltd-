@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../variables.css">
+    <style>
+        /******************************************/
+        /*Navigation*/
+        /******************************************/
+        nav {
+            background: var(--primary-color);
+            position: fixed;
+            max-width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0rem 1.5rem;
+            background: white;
+            gap: 5px;
+        }
+
+        .logo img {
+            height: 30px;
+        }
+
+        .logo h1 {
+            font-family: 'Futura-Light', sans-serif;
+            font-weight: lighter;
+            font-size: .8rem;
+            color: black;
+        }
+
+
+        /* Menu Items */
+        .nav-links {
+            gap: 2px;
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); */
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .blue {
+            background-color: var(--primary-color);
+        }
+
+        .red {
+            background-color: var(--secondary-color);
+        }
+
+        .nav-links a {
+            display: block;
+            width: 100%;
+            /* mobile safe */
+            max-width: 120px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            display: block;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            font-family: 'Futura-Demi', sans-serif;
+            font-size: 1rem;
+        }
+
+
+        /* Underline animation */
+        /*.nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+        } */
+
+        /* .nav-links a:hover::after {
+            width: 100%;
+        } */
+
+        /* Mobile Menu Button */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1rem;
+            }
+
+            .navbar {}
+
+            .nav-container {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+                padding: 0 0rem;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+
+            .menu-toggle {
+                display: block;
+                color: white;
+            }
+
+            .nav-links {
+
+                max-height: 0;
+                flex-direction: column;
+                background: white;
+                position: absolute;
+                top: 68px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                z-index: 999;
+                padding: 12px 0px;
+                overflow: hidden;
+                opacity: 0;
+                transform: translateY(-10px);
+                transition:
+                    max-height 0.4s ease,
+                    opacity 0.3s ease,
+                    transform 0.3s ease;
+            }
+
+            .nav-links.active {
+                max-height: 600px;
+                background-color: var(--primary-color);
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .nav-links a {
+                padding: 5px 15px;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: left;
+            }
+
+            .blue {
+                background-color: transparent;
+            }
+
+            .red {
+                background-color: transparent;
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            header {
+                padding: 8px 0;
+            }
+
+            .logo {
+                font-size: 0.5rem;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                padding: 6px 8px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1-edited.png" alt="Logo">
+                <h1>HORIZON LINES LTD</h1>
+            </div>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul class="nav-links">
+                <li><a class="red" href="#hero">HOME</a></li>
+                <li><a class="blue" href="#services-page">SERVICES</a></li>
+                <li><a class="red" href="#projects">PROJECTS</a></li>
+                <li><a class="blue" href="#about-page">ABOUT&nbsp;US</a></li>
+                <li><a class="red" href="#footer">CONTACT</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+</body>
+<script>
+    //Mobile menu toggle function
+    function toggleMenu() {
+        // Toggle the active class on the nav-links element
+        // This will show or hide the navigation menu
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+</script>
+
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="font-awesome/all.min.css">
+    <title>Home</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            /* prevents the 2nd scrollbar */
+        }
+
+        body.trybody nav {
+            position: absolute;
+        }
+
+        body.try-body .logo h1 {
+            color: white;
+        }
+
+        /****************************************/
+        /*Hero*/
+        /****************************************/
+        .hero-container {
+            width: 100%;
+            height: 100vh;
+            /* container takes full screen */
+            overflow-y: scroll;
+            /* enable vertical scrolling */
+            scroll-snap-type: y mandatory;
+            /* scroll snapping */
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            margin: 0;
+            padding: 4rem 4rem;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            /* each section fills the screen */
+            scroll-snap-align: start;
+            /* snap to the top of each section */
+        }
+
+        .hero-content {
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            padding: 2rem 0rem 2rem 0rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 7rem;
+
+        }
+
+        .hero-text h1 {
+            color: var(--primary-color);
+            font-family: 'Futura-Bold', sans-serif;
+            font-size: 3.5rem;
+            color: black;
+        }
+
+        .hero-text p {
+            color: black;
+            font-family: 'Futura-Light', sans-serif;
+            font-size: 1.2rem;
+            width: 80%;
+            text-align: justify;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            background: url(images/photocopy-nobg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .services {
+            width: 100%;
+            height: 100vh;
+            /* container takes full screen */
+            overflow-y: scroll;
+            /* enable vertical scrolling */
+            scroll-snap-type: y mandatory;
+            /* scroll snapping */
+            scroll-behavior: smooth;
+        }
+
+        .services {
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .services::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Edge, Safari */
+        }
+
+        .services .screen {
+            height: 100vh;
+            /* each section fills the screen */
+            scroll-snap-align: start;
+            /* snap to the top of each section */
+        }
+
+        .screen1 {
+            background: rgba(var(--primary-rgb), 0.8)
+        }
+
+        .screen2 {
+            background: rgba(var(--secondary-rgb), 0.8)
+        }
+
+        .screen3 {
+            background: var(--light-blue)
+        }
+
+        .services-content {
+
+            height: 80dvh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 4rem 4rem 0 4rem;
+            scroll-snap-align: start;
+        }
+
+        .services-image {
+            background-image: url(images/photocopy.jpg);
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+        }
+
+        .services-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .services-text h1 {
+            font-family: 'Futura-Bold', sans-serif;
+            font-size: 5rem;
+            color: white;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .services-list ul {
+            background-color: white;
+            width: 80%;
+            border-radius: 25px;
+            padding: 2rem;
+
+        }
+
+        .services-list li {
+            line-height: 1.5;
+            font-family: 'Futura-Light', sans-serif;
+            font-size: 1.2rem;
+        }
+
+        .services-contact {
+            color: white;
+            font-family: 'Futura-Light', sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+        }
+
+        .services-contact p {
+            font-size: .8rem;
+        }
+
+        .services-contact hr {
+            width: 40%;
+        }
+
+        .services-numbers {
+            font-family: 'Futura-Light', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+            width: 40%;
+        }
+
+        .services-numbers p {
+            font-size: 1rem;
+        }
+
+        /*Dots*/
+        .scroll-dots {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .scroll-dots span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .scroll-dots .active {
+            background: white;
+            transform: scale(1.3);
+        }
+    </style>
+    <script src="js/components.js"></script>
+    <script>
+        loadComponent("navbar", "components/navbar.html");
+    </script>
+</head>
+
+<body class="try-body">
+    <nav id="navbar"></nav>
+    <div class="hero-container">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>What can we<br> <strong style="color: var(--secondary-color);">print</strong> for you
+                        <br>today?
+                    </h1>
+                    <p>If you like, I can a live TikTok hashtag audit (right now) - check which tags are trending in
+                        Uganda /
+                        East Africa in the printing / manufacturing niche - and pick 10 ultra-high potential tags for
+                        you.
+                        Do you
+                        want me to do that?</p>
+                </div>
+                <div class="hero-image"></div>
+
+            </div>
+        </section>
+    </div>
+    <div class="services">
+        <section class="screen screen1">
+            <div class="services-content" style="padding: 6rem 4rem 0 4rem;">
+                <div class="services-text">
+                    <h1>GRAPHICS<br> DESIGN</h1>
+                    <div class="services-list">
+                        <ul>
+                            <li>Logo Design</li>
+                            <li>Business Card Design</li>
+                            <li>Flyer Design</li>
+                            <li>Brochure Design</li>
+                            <li>Poster Design</li>
+
+                        </ul>
+                        <ul>
+                            <li>Social Media Graphics</li>
+                            <li>Infographic Design</li>
+                            <li>Packaging Design</li>
+                            <li>Banner Design</li>
+                            <li>Newsletter Design</li>
+                        </ul>
+                    </div>
+                    <div class="services-contact">
+                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <hr>
+                        <div class="services-numbers">
+                            <p><i class="fa fa-phone"></i>0772507857</p>
+                            <p><i class="fab fa-whatsapp"></i>0750314624</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-image">
+
+                </div>
+            </div>
+        </section>
+        <section class="screen screen2">
+            <div class="services-content">
+                <div class="services-text">
+                    <h1>GRAPHICS<br> DESIGN</h1>
+                    <div class="services-list">
+                        <ul>
+                            <li>Logo Design</li>
+                            <li>Business Card Design</li>
+                            <li>Flyer Design</li>
+                            <li>Brochure Design</li>
+                            <li>Poster Design</li>
+
+                        </ul>
+                        <ul>
+                            <li>Social Media Graphics</li>
+                            <li>Infographic Design</li>
+                            <li>Packaging Design</li>
+                            <li>Banner Design</li>
+                            <li>Newsletter Design</li>
+                        </ul>
+                    </div>
+                    <div class="services-contact">
+                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <hr>
+                        <div class="services-numbers">
+                            <p><i class="fa fa-phone"></i>0772507857</p>
+                            <p><i class="fab fa-whatsapp"></i>0750314624</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-image">
+
+                </div>
+            </div>
+        </section>
+        <section class="screen screen3">
+            <div class="services-content">
+                <div class="services-text">
+                    <h1>GRAPHICS<br> DESIGN</h1>
+                    <div class="services-list">
+                        <ul>
+                            <li>Logo Design</li>
+                            <li>Business Card Design</li>
+                            <li>Flyer Design</li>
+                            <li>Brochure Design</li>
+                            <li>Poster Design</li>
+
+                        </ul>
+                        <ul>
+                            <li>Social Media Graphics</li>
+                            <li>Infographic Design</li>
+                            <li>Packaging Design</li>
+                            <li>Banner Design</li>
+                            <li>Newsletter Design</li>
+                        </ul>
+                    </div>
+                    <div class="services-contact">
+                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <hr>
+                        <div class="services-numbers">
+                            <p><i class="fa fa-phone"></i>0772507857</p>
+                            <p><i class="fab fa-whatsapp"></i>0750314624</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-image">
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="scroll-dots">
+        <span data-section="0" class="active"></span>
+        <span data-section="1"></span>
+        <span data-section="2"></span>
+        <span data-section="3"></span>
+    </div>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(".services > section");
+        const dots = document.querySelectorAll(".scroll-dots span");
+        const container = document.querySelector(".services");
+
+        // Highlight dot based on scroll position
+        container.addEventListener("scroll", () => {
+            let index = Math.round(container.scrollTop / window.innerHeight);
+            dots.forEach(d => d.classList.remove("active"));
+            dots[index].classList.add("active");
+        });
+
+        // Clicking dots scrolls to section
+        dots.forEach(dot => {
+            dot.addEventListener("click", () => {
+                const sectionIndex = dot.getAttribute("data-section");
+                container.scrollTo({
+                    top: sectionIndex * window.innerHeight,
+                    behavior: "smooth"
+                });
+            });
+        });
+    });
+
+    /*Fade In animations*/
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll(".services > section").forEach(sec => {
+        observer.observe(sec);
+    });
+
+</script>
+
+</html>

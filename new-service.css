@@ -1,0 +1,150 @@
+/****************************************/
+/*Services*/
+/****************************************/
+.services-content {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 6rem 4rem 4rem 4rem;
+        }
+
+        .services-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .services-text h1 {
+            font-family: 'Futura-Bold', sans-serif;
+            font-size: 4rem;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+
+
+        .services-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .services-list ul {
+            background-color: white;
+            border-radius: 25px;
+            padding: 2rem;
+            list-style-position: inside;
+        }
+
+        .services-list li {
+            line-height: 1.8;
+            font-family: 'Futura-Light', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .services-contact {
+            color: white;
+            font-family: 'Futura-Light', sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            margin-top: 30px;
+        }
+
+        .services-contact p {
+            font-size: 0.8rem;
+        }
+
+        .services-contact hr {
+            width: 90%;
+            border: 1px solid white;
+        }
+
+        .services-numbers {
+            font-family: 'Futura-Light', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 50%;
+        }
+
+        .services-numbers p {
+            font-size: 1.2rem;
+        }
+
+        .services-numbers i {
+            margin-right: 8px;
+        }
+
+        .services-image {
+            width: 100%;
+            height: 80%;
+            background: url(images/book.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+/* Services Sections */
+        .screen1 {
+            background: url(images/bgbluish@4x-8.png);
+        }
+
+        .screen2 {
+            background: url(images/bgyellow@4x-8.png);
+        }
+
+        .screen3 {
+            background: url(images/bgbluish@4x-8.png);
+        }
+
+        .screen4 {
+            background: url(images/bgyellow@4x-8.png);
+        }
+
+        .screen5 {
+            background: url(images/bgbluish@4x-8.png);
+        }
+
+        .screen6 {
+            background: url(images/bgyellow@4x-8.png);
+        }
+
+        .screen7 {
+            background: url(images/bgbluish@4x-8.png);
+        }
+
+        .screen8 {
+            background: url(images/bgyellow@4x-8.png);
+        }
+@media(max-width:768px){
+        .services-content{
+            display: flex;
+            flex-direction: column;
+            height: 200dvh;
+            padding: 1rem;
+        }
+        .services-text h1 {font-size: 3rem;}
+        .services-list{
+            display: flex;
+            flex-direction: column;
+        }
+        .services-contact p{
+            font-size: 1.2rem;
+        }
+        .services-numbers{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .services-image {
+        }
+        }

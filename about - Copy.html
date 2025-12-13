@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="about.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="variables.css">
+    <link href="font-awesome/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /********************************************************************************************/
+        /*Hero*/
+        /********************************************************************************************/
+        .hero {
+            padding: 0;
+            margin: 0;
+        }
+
+        .hero-content {
+            height: 70dvh;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            padding: 2rem 2rem 2rem 8rem;
+            margin: 0;
+            gap: 10px;
+        }
+
+        .hero-image {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%), url(images/printing1.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .hero-content h1 {
+            font-family: 'Futura-Bold', sans-serif;
+            font-weight: lighter;
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .hero-p {
+            font-family: 'Futura-Light', sans-serif;
+            font-size: 1.5rem;
+            color: black;
+            margin: 0;
+            width: 84%;
+
+        }
+
+        .contact-box {
+            background-color: var(--primary-color);
+            width: 600px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: .5rem 1rem .5rem .5rem;
+        }
+
+        .contact-box h3 {
+            font-size: 1.5rem;
+            background-color: white;
+            font-family: 'Futura-Bold', sans-serif;
+            color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .right-side {
+            font-family: 'Futura-Light', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem 1rem .5rem 1rem;
+        }
+
+        .first-line {
+            font-size: 1rem;
+            color: white;
+        }
+
+        .numbers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+        }
+
+        .second-line {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .third-line {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        @media(max-width:768px) {
+            .hero-content {
+                flex-direction: column;
+                display: flex;
+                height: 70vh;
+                padding: 2rem 0 0 0;
+            }
+
+            .hero-text {
+                justify-content: center;
+                padding: 4rem 0 0 0;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .contact-box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script src="js/components.js"></script>
+    <script>
+        loadComponent("navbar", "components/navbar.html");
+        loadComponent("footer", "components/footer.html");
+        loadComponent("stats", "components/stats.html");
+    </script>
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1><strong style="color: var(--secondary-color);">30 YEARS</strong> OF PRINTING<br> UGANDA'S BRANDS
+                </h1>
+                <p class="hero-p">Since 1994, Horizon Lines has helped businesses and institutions bring ideas to life.
+                    3 decades
+                    later,
+                    our mission remains - print quality that lasts</p>
+                <div class="contact-box">
+                    <h3>CONTACT US</h3>
+                    <div class="right-side">
+                        <p class="first-line">TO FIND OUT MORE CALL OR WHATSAPP:</p>
+                        <div class="numbers">
+                            <p class="second-line">0772507857</p>
+                            <p class="third-line"> <i class="fab fa-whatsapp"></i>0750314624</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image"></div>
+        </div>
+
+    </section>
+    <section id="stats"></section>
+    <section class="staff">
+        <div class="staff-content">
+            <h1>Our Staff</h1>
+            <p>We put a premium on bringing only the most qualified individuals to serve on our team.</p>
+            <div class="list-container">
+                <ul>
+                    <li>Production officer</li>
+                    <li>Operations officer</li>
+                    <li>Prepress/Graphic designer</li>
+                    <li>Binding and finishing manager</li>
+                    <li>Digital print production manager</li>
+
+                </ul>
+                <ul>
+
+                    <li>Customer service representative</li>
+                    <li>Quality control manager</li>
+                    <li>Accounts payable</li>
+                    <li>Accounts receivable</li>
+                </ul>
+            </div>
+            <div class="staff-qualities">
+                <p>The individuals we hire have the following qualities;</p>
+                <ul>
+                    <li>The ability to communicate effectively and a high level of
+                        organization </li>
+                    <li>Strong interpersonal skills and the desire to provide high
+                        quality products with excellent customer service</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="values">
+        <div class="values-content">
+            <div class="values-text">
+                <h1>Teamwork</h1>
+                <div class="image-text">
+                    <p> We are connected together as a team by open
+                        communication, sharing common goals, being supportive
+                        and honest. We value mutual respect, friendship and the
+                        enjoyment of working together. By working as a team and
+                        bringing our special abilities together, we ensure that we
+                        provide and indeed exceed the level of quality and service
+                        that our valued clients expect.<br><br>
+                        <strong>Service</strong>-We are totally committed to working with our clients
+                        and focusing on finding an individual solution to their unique
+                        business requirements. We are always prepared to respond
+                        quickly to whatever task is required of us and deliver an
+                        exceptional customer service.<br><br>
+                        We strive to provide services of superior quality, and service
+                        delivery - all within budget. Our customer service promise
+                        outlines our commitment to deliver on our services, produce
+                        quality products and focus on excellence, with an experience.
+                    </p>
+                    <div class="image-side"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="social-duty">
+        <div class="social-duty-content">
+            <h1>Social, Community and Environmental</h1>
+            <h1 class="respond" style="font-weight: 600;">Responsibility</h1>
+            <p>We have a social conscience as a business and also as individuals. We place a large
+                emphasis on social responsibility and justice. As such we endeavour to seek out and
+                support various causes every year, determined by the senior management team. We
+                ask our team members to become actively involved.<br><br>
+                We look for opportunities to support the community and to make a difference –
+                even if it is only in a small way. We are also aware of our environmental impact and
+                we're constantly looking for new sustainable business practices that minimise our
+                environmental footprint</p>
+
+        </div>
+        <div class="charity-image">
+            <img src="images/epson-long.jpg" alt="Charity">
+        </div>
+    </section>
+    <!----------------------------------------------------Footer---------------------------------------------------->
+    <footer id="footer"></footer>
+</body>
+
+</html>

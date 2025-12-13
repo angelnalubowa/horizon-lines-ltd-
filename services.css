@@ -1,0 +1,160 @@
+/****************************************/
+/*Services*/
+/****************************************/
+.services{
+    margin: 0;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 100%;    
+    background-color: white;
+}
+.services-content{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 2rem 0rem 2rem 0rem;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.service-text{
+    padding: 2rem;
+    margin: auto;}
+.service-text h1{
+    font-family: 'Futura-Bold',sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.service-text p{
+    width: 90%;
+    font-family: 'Futura-Light',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.service-text ul{
+    line-height: 2;
+    margin-left: 1rem;
+    padding: 0;
+    list-style-type: disc;
+    }
+    .service-text li{
+        font-family: 'Futura-Light',sans-serif;
+    }
+.service-image{
+    border-radius: 50px;
+width: 90%;
+height:100%;
+background: url(images/photocopy.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/********************Other Services********************************/
+.other-service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;    
+    background-color: rgba(var(--primary-rgb),.1);
+}
+.other-services-content{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 2rem 0rem 2rem 0rem;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.other-service-text{
+    padding: 0;
+    margin: auto;}
+.other-service-text h1{
+    font-family: 'Futura-Bold',sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.other-service-text p{
+    width: 90%;
+    font-family: 'Futura-Light',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.other-service-text ul{
+    line-height: 2;
+    margin-left: 1rem;
+    padding: 0;
+    list-style-type: disc;
+    }
+.other-service-text li{
+        font-family: 'Futura-Light',sans-serif;
+    }
+.other-service-image{
+    margin-left: 2rem;
+    border-radius: 50px;
+width: 90%;
+height:100%;
+background: url(images/photocopy.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+/**************Service Break****************************/
+.services-break{
+    margin: 2rem  0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-break-content{
+    height: 300px;
+    width: 70%;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 4rem;
+    gap: 30px;
+    border-radius: 15px;
+}
+.service-break-text{
+    
+}
+.service-break-text h1{
+    font-family: 'Futura-Bold',sans-serif;
+    font-size: 1.8rem;
+    width: 60%;
+    color: white;
+    margin-bottom: 20px;
+}
+.service-break-text p{
+    width: 70%;
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+    font-family: 'Futura-Bold',sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+.service-break-image{
+    height: 400px;
+    width: 80%;
+    border-radius: 25px;
+    background-image: url(images/photocopy.jpg);
+    background-position: center;
+    background-size: cover;
+background-repeat: no-repeat;
+}
+

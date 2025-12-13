@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Horizon Lines</title>
+    <link rel="icon" type="image/x-icon" href="images/printer.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="font-awesome/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /******************************************/
+        /*Hero*/
+        /******************************************/
+        .hero {
+            background: url(images/blackbg@4x-8.png) no-repeat center center/cover;
+        }
+
+        .hero-desktop {
+            display: block;
+            padding: 2rem 4rem;
+
+        }
+
+        .hero-container {
+            width: 100%;
+            align-content: center;
+            padding: 2% 0 0 2%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .hero-text {
+            /* background-color: var(--light-blue); */
+            height: 90vh;
+            padding: 0.7rem 0.7rem 0.7rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Futura-Bold', sans-serif;
+            font-size: 4rem;
+            color: black;
+            margin: 0;
+
+        }
+
+        .hero-text p {
+            font-family: 'Futura-Light', sans-serif;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .hero-text a {
+            font-family: 'Futura-Light', sans-serif;
+            font-weight: bolder;
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 2rem;
+        }
+
+        .quote {
+            background-color: var(--secondary-color);
+        }
+
+        .portfolio {
+            background-color: var(--primary-color);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero-img {
+            height: auto;
+            width: 100%;
+        }
+
+
+
+
+
+        .cta-contact {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero-desktop {
+                padding: 1rem 1rem 1rem 1rem;
+            }
+
+            .hero-container {
+                padding: 6rem 0 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+            }
+
+            .hero-text h1 {
+                font-size: 3rem;
+            }
+
+
+        }
+
+        /*  @media (max-width:1024px) {
+            .hero-container {
+                padding: 0 0 0 0rem;
+            }
+
+            .hero-text {
+                padding: 0.7rem;
+            }
+
+            .hero-text h1 {
+                font-size: 4rem;
+            }
+
+            .hero-text li {
+                padding: 0.3rem .9rem;
+            }
+        } */
+    </style>
+
+
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <section class="hero" id="hero">
+        <div class="hero-desktop">
+            <div class="hero-container" alt="hero-image">
+                <div class="hero-text">
+                    <h1 data-aos="fade-right" data-aos-duration="2000">Print that <strong
+                            style="color: var(--secondary-color);">Moves</strong><br><strong
+                            style="color: var(--primary-color);">Brands</strong> Forward.</h1>
+                    <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Premium commercial printing
+                        powered by precision<br> machines, disciplined craft, and a team that
+                        understands<br> deadlines the way you do.</p>
+                    <div class="hero-buttons" data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="2000">
+                        <a href="#" class="quote">GET A QUOTE</a>
+                        <a href="#" class="portfolio">SEE OUR WORK</a>
+                    </div>
+
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/hero-edited.png" class=hero-img alt="Hero Image">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="about">
+        <div class="about-content">
+            <div class="about-banner">
+                <h2 data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500">Who We Are.</h2>
+                <p data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1000">Horizon Lines Ltd. is a printing
+                    firm that
+                    started operations in 1994. We have set a
+                    track record in the printing industry because
+                    of our outstanding performance and quality
+                    products. We pride ourselves in efficiency,
+                    quality, timely delivery and a wide array of
+                    quality print solutions; supported by our top
+                    of the range print and finishing equipment
+                    operated by efficient and skilled personnel.</p>
+            </div>
+            <div class="about-cards">
+                <div class="about-card" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="2000">
+                    <h3 data-aos="fade" data-aos-duration="2500" data-aos-delay="3000">Our vision.</h3>
+                    <p data-aos="fade" data-aos-duration="2500" data-aos-delay="3000">To become the most reliable
+                        printers in the country in terms of quality and efficiency</p>
+                </div>
+                <div class="about-card" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="2000">
+                    <h3 data-aos="fade" data-aos-duration="2500" data-aos-delay="3000">Our mission.</h3>
+                    <p style="width:70%;" data-aos="fade" data-aos-duration="2500" data-aos-delay="3000">To maintain our
+                        record of quality production
+                        and prompt delivery </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="stats" data-aos="fade" data-aos-duration="2500" data-aos-delay="1000"></section>
+    <section class="service">
+        <div class="service-content">
+            <h1>What we do.</h1>
+            <div class="service-cards">
+                <div class="service-card" data-aos="slide-up" data-aos-duration="2000">
+                    <div class="service-icon">
+                        <img src="images/ux.png">
+                    </div>
+                    <div class="service-card-title">
+                        <h3>Graphic Designing</h3>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="slide-up" data-aos-duration="2000">
+                    <div class="service-icon"><img src="images/printer.png"></div>
+                    <div class="service-card-title">
+                        <h3>Photocopying</h3>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="slide-up" data-aos-duration="2000">
+                    <div class="service-icon"><img src="images/printing.png"></div>
+                    <div class="service-card-title">
+                        <h3>Quick Color Printing</h3>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="slide-up" data-aos-duration="2000">
+                    <div class="service-icon"><img src="images/offset (1).png"></div>
+                    <div class="service-card-title">
+                        <h3>Offset Plate Making</h3>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2500">
+                    <div class="service-icon"><img src="images/offset (3).png"></div>
+                    <div class="service-card-title">
+                        <h3>Flexographic printing</h3>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2500">
+                    <div class="service-icon"><img src="images/offset (6).png"></div>
+                    <div class="service-card-title">
+                        <h3>Offset printing</h3>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2500">
+                    <div class="service-icon"><img src="images/printing (1).png"></div>
+                    <div class="service-card-title">
+                        <h3>Barcode</h3>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2500">
+                    <div class="service-icon"><img src="images/hardcover.png"></div>
+                    <div class="service-card-title">
+                        <h3>Near Perfect Binding</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="service-buttons" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="2500">
+                <a href="#" class="quote">GET A QUOTE</a>
+                <a href="#" class="portfolio-white">SEE OUR WORK</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="testimonials" aria-label="Customer testimonials">
+        <div class="testimonial-heading">
+            <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">Our Previous Customers</h1>
+        </div>
+        <div class="testimonial-content">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel" id="carousel">
+                        <div class="testimonial-card">
+                            <div class="quote-icon" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500"><i
+                                    class="fa fa-quote-right"></i></div>
+                            <div class="author-info">
+                                <div class="author-details">
+                                    <div class="author-name" data-aos="fade-up" data-aos-duration="2000"
+                                        data-aos-delay="1500">SARAH J.</div>
+                                    <div class="author-title" data-aos="fade-up" data-aos-duration="2000"
+                                        data-aos-delay="1500">CEO, TechStart Inc.</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-text" data-aos="fade-up" data-aos-duration="2000"
+                                data-aos-delay="1500">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam tenetur, temporibus
+                                quasi voluptatem cupiditate nisi officiis reiciendis corporis assumenda quas voluptates,
+                                voluptatibus deserunt. Libero vero sint reprehenderit non facere illum.
+                            </p>
+                            <div class="author-image" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500">
+                                SJ
+                            </div>
+                        </div>
+
+
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500">
+                            <div class="quote-icon"><i class="fa fa-quote-right"></i></div>
+                            <div class="author-info">
+
+                                <div class="author-details">
+                                    <div class="author-name">MICHEAL C.</div>
+                                    <div class="author-title">Marketing Director, Creative Co.</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis earum obcaecati illo
+                                nihil rem itaque cum voluptas vero ipsum ab a, vitae ullam error at accusantium quisquam
+                                officia numquam molestias.
+                            </p>
+                            <div class="author-image">MC</div>
+
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa fa-quote-right"></i></div>
+                            <div class="author-info">
+                                <div class="author-details">
+                                    <div class="author-name">EMILY R.</div>
+                                    <div class="author-title">Project Manager, Design Studio</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis ipsum quia veniam, enim
+                                velit cumque, quo vitae sapiente sequi ratione fuga tempora! Cum quas tempora
+                                consectetur voluptatum natus at pariatur.
+                            </p>
+                            <div class="author-image">ER</div>
+
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa fa-quote-right"></i></div>
+                            <div class="author-info">
+
+                                <div class="author-details">
+                                    <div class="author-name">DAVID K.</div>
+                                    <div class="author-title">Founder, Innovation Labs</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat sapiente optio enim
+                                laborum veritatis voluptas, facere molestias rerum cupiditate provident nesciunt.
+                                Sapiente quis veniam corrupti quo laborum ad esse.
+                            </p>
+                            <div class="author-image">DK</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls" data-aos="fade" data-aos-duration="2000" data-aos-delay="2000">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Previous testimonial"><i
+                            class="fa fa-arrow-left"></i></button>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Next testimonial"><i
+                            class="fa fa-arrow-right"></i></button>
+                </div>
+
+                <div class="carousel-indicators" id="indicators" data-aos="fade" data-aos-duration="2000"
+                    data-aos-delay="2000"></div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="map-section" data-aos="fade-up" data-aos-duration="2000">
+        <div class="map-content">
+            <h2 class="map-title">LOCATION</h2>
+            <!-- <p>Located near: Monitor Publications on 8th Street</p> -->
+            <div class="map-card">
+                <div class="map-frame">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.9731690503395!2d32.59612714828063!3d0.3151560692154338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbd54b82ca4e7%3A0x3046f165e83333f5!2sHorizon%20Lines%20Ltd!5e0!3m2!1sen!2sug!4v1763726524763!5m2!1sen!2sug"
+                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+    </section>
+    <section class="brands-section">
+        <div class="brands-container">
+
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="200"
+                data-aos-anchor-placement="top-bottom"><img src="images/Centenary-logo.jpg"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="400"><img
+                    src="images/electoral-commission-of-uganda-ec-logo-png_seeklogo-548893.png">
+            </div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="600"><img
+                    src="images/IDI-logo.png"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="800"><img
+                    src="images/MoE-logo.png"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="1000"><img
+                    src="images/MoH-Logo.png"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="1200"><img
+                    src="images/NARO-logo.png"></div>
+
+        </div>
+        <h2 class="brands-title" data-aos="fade" data-aos-duration="2000">FAMOUS <strong
+                style="font-family:'Futura-Bold',sans-serif;color: var(--secondary-color);">BRANDS</strong> WE'VE WORKED
+            WITH.
+        </h2>
+
+        <div class="brands-container">
+
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="1400"><img
+                    src="images/nkumba-logo.png"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="1600"><img
+                    src="images/UBOS-logo.jpg"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="1800"><img
+                    src="images/UCC-logo.png"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="2000"><img
+                    src="images/uganda-law-reform-commission-logo-png_seeklogo-548903.png"></div>
+            <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-delay="2200"><img
+                    src="images/uganda-national-roads-authority-unra-logo-png_seeklogo-548882.png">
+            </div>
+            <div class="brand-icon"><img src="images/URCS-logo.jpg"></div>
+
+        </div>
+    </section>
+
+    <!----------------------------------------------------Services---------------------------------------------------->
+    <section id="services-page"></section>
+    <!----------------------------------------------------Portfolio---------------------------------------------------->
+    <!----------------------------------------------------About---------------------------------------------------->
+    <section class="about-section" id="about-page"></section>
+    <!----------------------------------------------------Footer---------------------------------------------------->
+    <footer id="footer"></footer>
+
+
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="js/components.js"></script>
+<script>
+    loadComponent("navbar", "components/navbar.html");
+    loadComponent("footer", "components/footer.html");
+    loadComponent("stats", "components/stats.html");
+    loadComponent("services-page", "new-services.html");
+    loadComponent("about-page", "about.html");
+</script>
+<script>
+    //Mobile menu toggle function
+    function toggleMenu() {
+        // Toggle the active class on the nav-links element
+        // This will show or hide the navigation menu
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+    /* Slider logic + animations */
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicatorsContainer = document.getElementById('indicators');
+
+    const cards = document.querySelectorAll('.testimonial-card');
+    const totalCards = cards.length;
+    let currentIndex = 0;
+
+    // Create indicators
+    for (let i = 0; i < totalCards; i++) {
+        const indicator = document.createElement('div');
+        indicator.className = 'indicator';
+        if (i === 0) indicator.classList.add('active');
+        indicator.addEventListener('click', () => goToSlide(i));
+        indicatorsContainer.appendChild(indicator);
+    }
+
+    const indicators = document.querySelectorAll('.indicator');
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalCards;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+        updateCarousel();
+    }
+
+    function goToSlide(index) {
+        currentIndex = index;
+        updateCarousel();
+    }
+
+    // Button controls
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Keyboard controls
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+            prevSlide();
+        }
+    });
+
+    // Optional: Auto-play
+    // let autoplayInterval = setInterval(nextSlide, 5000);
+
+    // Pause autoplay on hover (if enabled)
+    // carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+    // carousel.addEventListener('mouseleave', () => autoplayInterval = setInterval(nextSlide, 5000));
+
+
+    //Logic for the floating icons
+
+    /* document.querySelectorAll(".brand-icon").forEach(icon => {
+        const randomDelay = (Math.random() * 2).toFixed(2) + "s";
+        icon.style.setProperty("--delay", randomDelay);
+    }); */
+
+</script>
+
+
+</html>

@@ -9,16 +9,17 @@
         /******************************************/
         /*Navigation*/
         /******************************************/
+
         nav {
+            
             background: var(--primary-color);
             position: fixed;
-            max-width: 100%;
+            width: 100%;
             top: 0;
-            left: 0;
             right: 0;
+            left: 0; 
             padding: 1rem 2rem;
             z-index: 1000;
-            box-sizing: border-box;
         }
 
         .navbar {
@@ -58,6 +59,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            right:0;
             /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); */
         }
 
@@ -74,15 +76,15 @@
         }
 
         .nav-links a {
-            display: block;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0rem 1.5rem;
             /* mobile safe */
             max-width: 120px;
             height: 30px;
             text-align: center;
             align-content: center;
             justify-content: center;
-            display: block;
             text-decoration: none;
             color: white;
             position: relative;
@@ -91,7 +93,6 @@
             font-family: 'Futura-Demi', sans-serif;
             font-size: 1rem;
         }
-
 
         /* Underline animation */
         /*.nav-links a::after {
@@ -122,8 +123,6 @@
                 padding: 1rem 1rem;
             }
 
-            .navbar {}
-
             .nav-container {
                 flex-direction: column;
                 gap: 10px;
@@ -132,7 +131,7 @@
 
             .logo {
                 font-size: 1.3rem;
-                padding: 0 0rem;
+                padding: 0 .4rem;
             }
 
             nav ul {
@@ -152,9 +151,9 @@
             }
 
             .nav-links {
-
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 max-height: 0;
-                flex-direction: column;
                 background: white;
                 position: absolute;
                 top: 68px;
@@ -162,7 +161,7 @@
                 width: 100%;
                 text-align: center;
                 z-index: 999;
-                padding: 12px 0px;
+                padding: 12px 40px;
                 overflow: hidden;
                 opacity: 0;
                 transform: translateY(-10px);
@@ -181,19 +180,6 @@
 
             .nav-links a {
                 padding: 5px 15px;
-            }
-
-            .nav-links li {
-                width: 100%;
-                text-align: left;
-            }
-
-            .blue {
-                background-color: transparent;
-            }
-
-            .red {
-                background-color: transparent;
             }
         }
 

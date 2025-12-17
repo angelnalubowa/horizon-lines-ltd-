@@ -14,11 +14,21 @@
             flex-direction: column;
             justify-content: space-evenly;
         }
-
+        .text-black{
+            color: black;
+        }
+        .text-white{
+            color: white;
+        }
+        .back-white{
+            background-color: white;
+        }
+        .back-black{
+            background-color: black;
+        }
         .services-text h1 {
             font-family: 'Futura-Bold', sans-serif;
             font-size: 4rem;
-            color: white;
             line-height: 1.1;
             margin-bottom: 30px;
         }
@@ -32,7 +42,6 @@
         }
 
         .services-list ul {
-            background-color: white;
             border-radius: 25px;
             padding: 2rem;
             list-style-position: inside;
@@ -40,13 +49,12 @@
 
         .services-list li {
             line-height: 1.8;
-            font-family: 'Futura-Light', sans-serif;
+            font-family: 'Futura-Book', sans-serif;
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
 
         .services-contact {
-            color: white;
             font-family: 'Futura-Light', sans-serif;
             display: flex;
             flex-direction: column;
@@ -55,24 +63,26 @@
         }
 
         .services-contact p {
-            font-size: 0.8rem;
+            font-size: 1.4rem;
+            font-family: 'Futura-Light',sans-serif;
         }
 
         .services-contact hr {
             width: 90%;
-            border: 1px solid white;
+            border: 1px solid black;
         }
 
         .services-numbers {
             font-family: 'Futura-Light', sans-serif;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            width: 50%;
+            gap: 86px;
+            width: 80%;
         }
 
         .services-numbers p {
-            font-size: 1.2rem;
+            font-size: 2rem;
+            font-family: 'Futura-Demi',sans-serif;
         }
 
         .services-numbers i {
@@ -145,6 +155,5 @@
             flex-direction: row;
             width: 100%;
         }
-        .services-image {
-        }
+        
         }

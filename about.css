@@ -66,6 +66,7 @@ flex:1;
 @media(max-width:768px){
     .staff-content{
         flex-direction: column;
+        padding: 1rem 1rem;
     }
     .staff-title h1{
         font-size: 3rem;
@@ -81,6 +82,15 @@ flex:1;
         height: 150px;
         width: 150px;
     }
+}
+@media(max-width:375px){
+    .staff-image{
+        height: 100px;
+        width: 100px;
+    }
+}
+@media(max-width:325px){
+
 }
 /******************************************/
 /*values */
@@ -163,6 +173,7 @@ flex:1;
     }
     .values-header ul{
         width: 100%;
+        padding: 1rem 2rem;
     }
     .more-values{
         display: flex;
@@ -175,6 +186,20 @@ flex:1;
     }
     .customer-service{
         padding: 2rem 2rem;
+    }
+}
+@media(max-width:375px){
+    .values-header ul{
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: justify;
+    }
+    .values-header li{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:325px){
+    .values-header ul{
+        padding: 1rem 1rem 1rem 2rem;
     }
 }
 /******************************************/

@@ -61,7 +61,7 @@
 
         .services-cta {
             font-size: 1.2rem;
-            font-family: 'Futura-Light',sans-serif;
+            font-family: 'Futura-Book',sans-serif;
         }
 
         .services-contact hr {
@@ -118,19 +118,26 @@
             flex-direction: column;
             height: 225dvh;
             padding: 1rem;
+            gap:10px;
         }
         .services-text h1 {font-size: 3rem;}
         .services-list{
             display: flex;
             flex-direction: column;
         }
-        .services-contact p{
-            font-size: 1.2rem;
+        .services-cta{
+            font-size: .9rem;
         }
         .services-numbers{
             display: flex;
             flex-direction: row;
             width: 100%;
+            gap:10px;
         }
-        
+        .services-numbers p{
+            font-size: 1rem;
+        }
+        .services-image img{
+            height:290px;
+        }
         }

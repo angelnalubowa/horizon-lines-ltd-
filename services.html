@@ -11,12 +11,20 @@
     <link rel="stylesheet" href="css/service.css">
     <link rel="stylesheet" href="css/navbar.css">    
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1.dist/aos.js">
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+            overflow-x: hidden !important;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden !important;
         }
         /*Services*/
         .services-hero {
@@ -95,6 +103,7 @@
             }
         }
     </style>
+    <script src="js/main.js"></script>
     <script src="js/components.js"></script>
     <script>
         loadComponent("footer", "components/footer.html");
@@ -425,6 +434,7 @@
     <!--Footer-->
     <div id="footer"></div>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>

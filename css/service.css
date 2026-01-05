@@ -1,145 +1,69 @@
 /****************************************/
 /*Services*/
 /****************************************/
-.services-content {
-            height: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            padding: 6rem 4rem 4rem 4rem;
-        }
+.services-content{
+    display: flex;
+    flex-direction: column;
+}
 
-        .services-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-        .text-black{
-            color: black;
-        }
-        .text-white{
-            color: white;
-        }
-        .back-white{
-            background-color: white;
-        }
-        .back-black{
-            background-color: black;
-        }
-        .services-text h1 {
-            font-family: 'Futura-Bold', sans-serif;
-            font-size: 4rem;
-            line-height: 1.1;
-            margin-bottom: 30px;
-        }
-        .services-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .services-list ul {
-            border-radius: 25px;
-            padding: 2rem;
-            list-style-position: inside;
-        }
-
-        .services-list li {
-            line-height: 1.8;
-            font-family: 'Futura-Book', sans-serif;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .services-contact {
-            font-family: 'Futura-Light', sans-serif;
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-            margin-top: 30px;
-        }
-
-        .services-cta {
-            font-size: 1.2rem;
-            font-family: 'Futura-Book',sans-serif;
-        }
-
-        .services-contact hr {
-            width: 90%;
-            border: 1px solid black;
-        }
-
-        .services-numbers {
-            font-family: 'Futura-Light', sans-serif;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 86px;
-            width: 80%;
-        }
-
-        .services-numbers p {
-            font-size: 1.5rem;
-            font-family: 'Futura-Demi',sans-serif;
-        }
-
-        .services-numbers i {
-            margin-right: 8px;
-        }
-
-        .services-image {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-self: center;
-            align-items: center;
-            justify-content: center;
-
-        }
-        .services-image img{
-            width: 100%;
-            height: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            object-position: center;
-            
-        }
-/* Services Sections */
-        .screen-blue {
-            background: url(../images/bgbluish@4x-8.png);
-        }
-
-        .screen-yellow{
-            background: url(../images/bgyellow@4x-8.png);
-        }
-@media(max-width:768px){
-        .services-content{
-            display: flex;
-            flex-direction: column;
-            height: fit-content;
-            padding: 1rem;
-            gap:10px;
-        }
-        .services-text h1 {font-size: 3rem;}
-        .services-list{
-            display: flex;
-            flex-direction: column;
-        }
-        .services-cta{
-            font-size: .9rem;
-        }
-        .services-numbers{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            gap:10px;
-        }
-        .services-numbers p{
-            font-size: 1rem;
-        }
-        .services-image{
-            height: fit-content;
-        }
-        .services-image img{
-            height:290px;
-        }
-        }
+.services-text{
+    padding: 2rem;
+}
+.services-text h1{
+    font-family: 'Futura-Demi',sans-serif;
+    font-size: clamp(3rem, calc(5vw + 2rem), 6rem);
+}
+.services-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.services-list ul{
+    border-radius: 25px;
+    padding: 1rem 3rem;
+    line-height: 2;
+    font-size: clamp(1.3rem, 2vw + 1rem, 2.5rem);
+    
+}
+.services-list li{
+    font-family: 'Futura-Light',sans-serif;
+}
+.services-contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.services-contact a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Futura-Demi',sans-serif;
+    font-size: clamp(1rem, calc(2vw + 1rem), 2rem);
+}
+.services-image{
+    height: 100%;
+}
+.services-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blue-grad{
+    background: url(../images/blue\ gradient@4x-8.png);
+}
+.red-grad{
+    background: url(../images/red\ gradient@4x-8.png);
+}
+.grey-grad{
+    background: url(../images/grey\ gradient@4x-8.png);
+}.offset{
+    background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,.3) 100%), url(../images/offset.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

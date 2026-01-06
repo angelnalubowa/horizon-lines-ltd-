@@ -165,9 +165,9 @@ body{
     .service{
         padding: 2rem 2rem;
     }
-    .service-content{
+    /* .service-content{
         
-    }
+    } */
     .service-cards{
         display: flex;
         flex-direction: column;
@@ -237,9 +237,9 @@ body{
             gap:20px;
         }
 
-        .quote-icon {
+        /* .quote-icon {
             
-        }
+        } */
         .quote-icon i{
             color: black;
             font-size: 90px;
@@ -381,7 +381,7 @@ body{
 /******************************************/
 /*Map*/
 /******************************************/
-.map-section{}
+/* .map-section{} */
 .map-content {
     padding: 60px 20px;
     display: flex;

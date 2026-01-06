@@ -79,7 +79,12 @@
             font-size: 1rem;
             border-radius: 25px;
         }
-        
+        .visited-blue:visited{
+            color: var(--primary-color);
+        }
+        .visted-white:visited{
+            color: white;
+        }
 
         /* Mobile Menu Button */
         .menu-toggle {

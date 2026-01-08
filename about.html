@@ -101,29 +101,13 @@
     <script src="js/components.js"></script>
     <script>
         loadComponent("footer", "components/footer.html");
+        loadComponent("nav","components/navbar.html")
     </script>
 </head>
 
 <body>
     <!--Navbar-->
-    <nav>
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo1-edited.png" alt="Logo">
-                <h1>HORIZON LINES LTD</h1>
-            </div>
-            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-            <ul class="nav-links">
-                <li><a class=" text-blue visited-blue" href="index.html">HOME</a></li>
-                <li><a class="bg-blue text-white visited-white" href="services.html">SERVICES</a></li>
-                <li><a class=" text-blue visited-blue" href="#projects">PROJECTS</a></li>
-                <li><a class="bg-blue text-white visited-white" href="#hero-about">ABOUT&nbsp;US</a></li>
-                <li><a class=" text-blue visited-blue" href="#footer">CONTACT</a></li>
-
-            </ul>
-        </div>
-
-    </nav>
+    <div class="navbar"></div>
     <!--Hero Section-->
     <section class="about-hero" id="hero-about">
         <div class="about-hero-content">

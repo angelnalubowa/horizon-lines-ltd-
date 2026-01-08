@@ -11,9 +11,10 @@
 }
 .services-text h1{
     font-family: 'Futura-Demi',sans-serif;
-    font-size: clamp(3rem, calc(5vw + 2rem), 5rem);
+    font-size: clamp(3rem, calc(5vw + 2rem), 4.5rem);
     color: white;
     margin: 0 0 2rem 0;
+    line-height: .9;
 }
 .services-list{
     display: flex;
@@ -22,7 +23,7 @@
     margin: 2rem 0;
 }
 .services-list ul{
-    border-radius: 25px;
+    border-radius: 12px;
     padding: 1rem 3rem;
     line-height: 2;
     font-size: clamp(1rem, calc(1vw + .5rem), 1.5rem);
@@ -30,25 +31,6 @@
 }
 .services-list li{
     font-family: 'Futura-Light',sans-serif;
-}
-.services-contact{
-    display: flex;
-    justify-content: space-evenly;
-}
-.services-contact a{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    padding: .5rem 1rem;
-    text-decoration: none;
-    font-family: 'Futura-Demi',sans-serif;
-    font-size: clamp(.5rem, calc(2vw + .5rem), 1.2rem);
-}
-
-.services-contact a i{
-    margin-right: .5rem;
 }
 .services-image{
     height: 100%;
@@ -69,7 +51,7 @@
     background: url(../images/grad-grey.png);
 }
 .purple-grad{
-    background: rgba(75, 12, 83);
+    background: url(../images/grad-purple.png);
 }
 .offset{
     background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/offset.webp);
@@ -90,59 +72,65 @@
     background-repeat: no-repeat;
 }
 .flexographic{
-    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/flexographic.jpg);
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/magazine-flipped.jpg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .bg-white-transparent{
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .09);
+}
+.bg-white-t-2{
+    background-color: rgba(255,255,255,.1);
 }
 .bg-black-transparent{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .09);
+}
+.bg-black-t-2{
+    background-color: rgba(0, 0, 0, .3);
+}
+.bg-black-t-3{
+    background-color: rgba(0,0,0,.4);
 }
 @media(min-width:768px){
     .section{
-        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .services-content{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         gap: 20px;
-        width: 80%;
-        padding: 3rem 0;
+        width: 90%;
+        padding: 5rem 0rem 5rem 0rem;
+        
     }
     .services-list{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        margin: 2rem 0;
+        margin: 0rem 0;
+        width: 300px;
     }
     .services-list ul{
-        line-height: 1.3;
+        line-height: 1.2;
+        width: 300px;
+        padding: 1rem 0rem 1rem 3rem;
     }
-    .services-contact{
-        justify-content: start;
-        gap: 10px;
-    }
-    .services-contact a{
-        padding: 1rem;
-        border-radius: 12px;
-    }
-    .services-contact a:hover{
-        background-color: var(--primary-color);
-        color: white;
-    }
-    .services-image{
-        height: 100%;
-    }
+    /* .services-image{
+    
+    } */
     .services-image img{
-        object-fit: contain;
+        /* object-fit:contain; */
+        overflow: visible;
+
     }
     .printing{
         background-size: cover;
+    }
+    .flexographic{
+        background-size: cover;
+        background-position: bottom;
     }
 }

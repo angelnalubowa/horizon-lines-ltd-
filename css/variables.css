@@ -68,11 +68,5 @@
         .bg-white{
             background-color: white;
         }
-        .bg-green{
-            background-color: rgba(18, 140, 126, .4);
-        }
-        .bg-red{
-            background-color: rgba(var(--secondary-rgb), .4);
-        }
         
         

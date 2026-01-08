@@ -102,30 +102,14 @@
     <script src="js/main.js"></script>
     <script src="js/components.js"></script>
     <script>
+        loadComponent("navbar","components/navbar.html")
         loadComponent("footer", "components/footer.html");
     </script>
 </head>
 
 <body class="service-page">
     <!--Navigation bar-->
-    <nav>
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo1-edited.png" alt="Logo">
-                <h1>HORIZON LINES LTD</h1>
-            </div>
-            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-            <ul class="nav-links">
-                <li><a class=" text-blue visited-blue" href="index.html">HOME</a></li>
-                <li><a class="bg-blue text-white visited-white" href="services.html">SERVICES</a></li>
-                <li><a class=" text-blue visited-blue" href="#">PROJECTS</a></li>
-                <li><a class="bg-blue text-white visited-white" href="about.html">ABOUT&nbsp;US</a></li>
-                <li><a class=" text-blue visited-blue" href="#footer">CONTACT</a></li>
-
-            </ul>
-        </div>
-
-    </nav>
+    <div id="navbar"></div>
     <!--Services Hero-->
     <section class="services-section" id="services-page">
         <div class="services-hero">
@@ -155,30 +139,24 @@
                     <div class="services-list">
                         <ul class="bg-black-transparent text-white" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
-                            <li>Logo Design</li>
-                            <li>Business Card Design</li>
-                            <li>Flyer Design</li>
-                            <li>Brochure Design</li>
-                            <li>Poster Design</li>
+                            <li>Logo design</li>
+                            <li>Business card design</li>
+                            <li>Flyer design</li>
+                            <li>Brochure design</li>
+                            <li>Poster design</li>
                         </ul>
                         <ul class="bg-black-transparent text-white" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
-                            <li>Social Media Graphics</li>
-                            <li>Infographic Design</li>
-                            <li>Packaging Design</li>
-                            <li>Banner Design</li>
-                            <li>Newsletter Design</li>
+                            <li>Social media graphics</li>
+                            <li>Infographic design</li>
+                            <li>Packaging design</li>
+                            <li>Banner design</li>
+                            <li>Newsletter design</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your graphic design services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-                    <img src="images/book.png">
+                    <img src="images/graphics-design2.png">
                 </div>
             </div>
         </div>
@@ -188,15 +166,15 @@
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">PRINTING<br> SERVICES</h1>
                     <div class="services-list">
-                        <ul class="bg-black-transparent text-white" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="bg-black-t-2 text-white" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
-                            <li>Business Cards</li>
+                            <li>Business cards</li>
                             <li>Letterheads</li>
                             <li>Envelopes</li>
-                            <li>Flyers & Brochures</li>
-                            <li>Posters & Banners</li>
+                            <li>Flyers & brochures</li>
+                            <li>Posters & banners</li>
                         </ul>
-                        <ul class="bg-black-transparent text-white" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="bg-black-t-2 text-white" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Calendars</li>
                             <li>Stickers & Labels</li>
@@ -204,12 +182,6 @@
                             <li>Large Format Print</li>
                             <li>Book Binding</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your printing services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <!-- <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
@@ -234,18 +206,12 @@
                         </ul>
                         <ul class="bg-white-transparent text-white" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
-                            <li>Promotional Items</li>
-                            <li>T-shirt Printing</li>
-                            <li>Mug Printing</li>
-                            <li>Brand Guidelines</li>
-                            <li>Digital Assets</li>
+                            <li>Promotional items</li>
+                            <li>T-shirt printing</li>
+                            <li>Mug printing</li>
+                            <li>Brand guidelines</li>
+                            <li>Digital assets</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your branding services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
@@ -259,28 +225,22 @@
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">OFFSET PLATE<br> MAKING</h1>
                     <div class="services-list">
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-black-t-2" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Newspaper production</li>
-                            <li>Magazine Printing</li>
-                            <li>Book Publishing</li>
+                            <li>Magazine printing</li>
+                            <li>Book publishing</li>
                             <li>Large-scale brochure printing</li>
                             <li>Corporate stationery production</li>
                         </ul>
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-black-t-2" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Packaging inserts</li>
                             <li>Advertising posters</li>
-                            <li>Catalog Production</li>
+                            <li>Catalog production</li>
                             <li>Forms printing</li>
                             <li>Long-run commercial printing</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your offset plate making services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
@@ -295,7 +255,7 @@
                     <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">DIGITAL QUICK<br> COLOR
                         PRINTING</h1>
                     <div class="services-list">
-                        <ul class="text-white bg-white-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-white-t-2" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Business cards</li>
                             <li>Flyers</li>
@@ -303,7 +263,7 @@
                             <li>Certificates</li>
                             <li>Invitations</li>
                         </ul>
-                        <ul class="text-white bg-white-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-white-t-2" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Menus</li>
                             <li>Presentation slides</li>
@@ -311,12 +271,6 @@
                             <li>Personalised marketing materials</li>
                             <li>Event programs</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your digital quick color printing services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
@@ -331,7 +285,7 @@
                     <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">FLEXOGRAPHIC<br> PRINTING
                     </h1>
                     <div class="services-list">
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-black-t-3" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Food packaging (snack wrappers, brand bags)</li>
                             <li>Beverage labels</li>
@@ -339,7 +293,7 @@
                             <li>Corrugated cardboard boxes</li>
                             <li>Adhesive labels and stickers</li>
                         </ul>
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-black-t-3" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Pharmaceutical packaging</li>
                             <li>Paper cups and plates</li>
@@ -347,12 +301,6 @@
                             <li>Gift wrap</li>
                             <li>Tetra pak-style cartons</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your flexographic printing services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
@@ -363,10 +311,10 @@
         <section class="section grey-grad">
             <div class="services-content">
                 <div class="services-text">
-                    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">NEAT<br> PERFECT BINDING
+                    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">NEAT PERFECT BINDING
                     </h1>
                     <div class="services-list">
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-white-transparent" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Softcover books</li>
                             <li>Reports and proposals</li>
@@ -374,7 +322,7 @@
                             <li>Training manuals</li>
                             <li>Academic theses</li>
                         </ul>
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-white-transparent" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Product catalogs</li>
                             <li>Magazines</li>
@@ -382,12 +330,6 @@
                             <li>Instructional manuals</li>
                             <li>Presentation documents</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your neat perfect binding services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
@@ -402,7 +344,7 @@
                     <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">BARCODE AND<br> NUMBERING
                     </h1>
                     <div class="services-list">
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-black-t-2" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Product tracking labels</li>
                             <li>Inventory management</li>
@@ -410,7 +352,7 @@
                             <li>Exam papers</li>
                             <li>Receipts and invoices</li>
                         </ul>
-                        <ul class="text-white bg-black-transparent" data-aos="fade-right" data-aos-duration="2000"
+                        <ul class="text-white bg-black-t-2" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-once="true">
                             <li>Security documents</li>
                             <li>Warranty cards</li>
@@ -418,12 +360,6 @@
                             <li>ID Cards</li>
                             <li>Warehouse logistics labels</li>
                         </ul>
-                    </div>
-                    <div class="services-contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <a class="bg-red text-white" href="tel:0772507857"><i class="fa fa-phone"></i>0772507857</a>
-                        <a class="bg-green text-white"
-                            href="https://wa.me/256750314624?text=Hi! I'm interested in your barcode and numbering services."
-                            target="_blank"><i class="fab fa-whatsapp"></i>0750314624</a>
                     </div>
                 </div>
                 <!-- <div class="services-image" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">

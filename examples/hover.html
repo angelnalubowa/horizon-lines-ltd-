@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Hover Animations</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .demo-section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* 1. Underline Slide */
+        .underline-slide {
+            position: relative;
+            color: #2563eb;
+            text-decoration: none;
+            padding-bottom: 2px;
+        }
+        .underline-slide::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2563eb;
+            transition: width 0.3s ease;
+        }
+        .underline-slide:hover::after {
+            width: 100%;
+        }
+
+        /* 2. Fade Underline */
+        .fade-underline {
+            color: #7c3aed;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .fade-underline:hover {
+            border-bottom-color: #7c3aed;
+        }
+
+        /* 3. Color Shift */
+        .color-shift {
+            color: #059669;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .color-shift:hover {
+            color: #10b981;
+        }
+
+        /* 4. Bracket Expand */
+        .bracket-expand {
+            color: #dc2626;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .bracket-expand::before,
+        .bracket-expand::after {
+            display: inline-block;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        .bracket-expand::before {
+            content: '[ ';
+            transform: translateX(10px);
+        }
+        .bracket-expand::after {
+            content: ' ]';
+            transform: translateX(-10px);
+        }
+        .bracket-expand:hover::before,
+        .bracket-expand:hover::after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* 5. Glow Effect */
+        .glow {
+            color: #0891b2;
+            text-decoration: none;
+            transition: text-shadow 0.3s ease;
+        }
+        .glow:hover {
+            text-shadow: 0 0 8px rgba(8, 145, 178, 0.5);
+        }
+
+        /* 6. Double Underline */
+        .double-underline {
+            position: relative;
+            color: #ea580c;
+            text-decoration: none;
+            padding-bottom: 4px;
+        }
+        .double-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #ea580c;
+            transition: all 0.3s ease;
+        }
+        .double-underline:hover::after {
+            height: 3px;
+        }
+
+        /* 7. Arrow Slide */
+        .arrow-slide {
+            color: #4f46e5;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .arrow-slide::after {
+            content: ' →';
+            display: inline-block;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+        }
+        .arrow-slide:hover::after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* 8. Background Fill */
+        .bg-fill {
+            position: relative;
+            color: #1f2937;
+            text-decoration: none;
+            padding: 4px 8px;
+            overflow: hidden;
+            transition: color 0.3s ease;
+        }
+        .bg-fill::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+        .bg-fill:hover {
+            color: #1f2937;
+        }
+        .bg-fill:hover::before {
+            width: 100%;
+        }
+
+        /* 9. Scale Up */
+        .scale-up {
+            color: #be123c;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .scale-up:hover {
+            transform: scale(1.05);
+        }
+
+        /* 10. Underline From Center */
+        .underline-center {
+            position: relative;
+            color: #0d9488;
+            text-decoration: none;
+            padding-bottom: 2px;
+        }
+        .underline-center::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #0d9488;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .underline-center:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #1f2937;">Elegant Link Hover Animations</h1>
+
+    <div class="demo-section">
+        <h2>1. Underline Slide</h2>
+        <a href="#" class="underline-slide">Hover to see underline slide in</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>2. Fade Underline</h2>
+        <a href="#" class="fade-underline">Simple fade-in underline effect</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>3. Color Shift</h2>
+        <a href="#" class="color-shift">Color transitions smoothly on hover</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>4. Bracket Expand</h2>
+        <a href="#" class="bracket-expand">Brackets appear around text</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>5. Glow Effect</h2>
+        <a href="#" class="glow">Text glows subtly on hover</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>6. Double Underline</h2>
+        <a href="#" class="double-underline">Underline grows thicker on hover</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>7. Arrow Slide</h2>
+        <a href="#" class="arrow-slide">Arrow appears on hover</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>8. Background Fill</h2>
+        <a href="#" class="bg-fill">Background fills from left</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>9. Scale Up</h2>
+        <a href="#" class="scale-up">Link grows slightly larger</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>10. Underline From Center</h2>
+        <a href="#" class="underline-center">Underline expands from center</a>
+    </div>
+</body>
+</html>

@@ -3,6 +3,48 @@ body{
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
 }
+/******************************************/
+/*Stats*/
+/******************************************/
+.stats {
+    background: white;
+    padding: 3rem 1rem;
+}
+
+.stat-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.stat-item h1 {
+    font-family: 'Futura-Bold', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.stat-item p {
+    font-family: 'Futura-Bold', sans-serif;
+    font-size: .9rem;
+    margin: 0;
+    letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+    .stat-group {
+        flex-direction: column;
+    }
+}
 
 /******************************************/
 /*About*/

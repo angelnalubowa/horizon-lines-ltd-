@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="font-awesome/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
     <style>
         html {
             scroll-behavior: smooth;
@@ -234,7 +233,31 @@
             </div>
         </div>
     </section>
-    <section id="stats" data-aos="fade" data-aos-duration="2500" data-aos-once="true"></section>
+    <section class="stats">
+        <div class="stat-group">
+            <div class="stat-item">
+                <h1>
+                    <span class="count" data-target="30" data-suffix="+">0</span>
+                </h1>
+                <p>YEARS IN BUSINESS</p>
+            </div>
+
+            <div class="stat-item" style="color: var(--secondary-color);">
+                <h1>
+                    <span class="count" data-target="1000000" data-format="compact">0</span>
+                </h1>
+                <p>JOBS COMPLETED</p>
+            </div>
+
+            <div class="stat-item">
+                <h1>
+                    <span class="count" data-target="100" data-suffix="+">0</span>
+                </h1>
+                <p>EMPLOYEES</p>
+            </div>
+        </div>
+    </section>
+
     <section class="service" id="services">
         <div class="service-content">
             <h1>What we do.</h1>
@@ -472,7 +495,49 @@
 <script>
     loadComponent("navbar", "components/navbar.html");
     loadComponent("footer", "components/footer.html");
-    loadComponent("stats", "components/stats.html");
+</script>
+<script>
+const counters = document.querySelectorAll(".count");
+
+const formatNumber = (value, format) => {
+    if (format === "compact") {
+        return new Intl.NumberFormat("en", {
+            notation: "compact",
+            maximumFractionDigits: 1
+        }).format(value);
+    }
+    return value.toLocaleString();
+};
+
+const animateCount = (counter) => {
+    const target = +counter.dataset.target;
+    const suffix = counter.dataset.suffix || "";
+    const format = counter.dataset.format;
+    let current = 0;
+    const duration = 1500;
+    const start = performance.now();
+
+    const update = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        current = Math.floor(progress * target);
+        counter.innerText = formatNumber(current, format) + suffix;
+
+        if (progress < 1) requestAnimationFrame(update);
+    };
+
+    requestAnimationFrame(update);
+};
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCount(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.6 });
+
+counters.forEach(counter => observer.observe(counter));
 </script>
 
 </html>

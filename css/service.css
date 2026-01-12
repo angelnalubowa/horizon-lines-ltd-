@@ -133,4 +133,11 @@
         background-size: cover;
         background-position: bottom;
     }
+
+}
+@media(min-width:1024px){
+    .services-content{
+        padding: 7rem 0rem 7rem 0rem;
+        width: 75%;
+    }
 }

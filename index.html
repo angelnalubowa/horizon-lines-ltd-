@@ -262,21 +262,21 @@
         <div class="stat-group">
             <div class="stat-item">
                 <h1>
-                    <span class="count" data-target="30" data-suffix="+">0</span>
+                    <span class="count" data-target="30" data-suffix="+" data-duration="2000">0</span>
                 </h1>
                 <p>YEARS IN BUSINESS</p>
             </div>
 
             <div class="stat-item" style="color: var(--secondary-color);">
                 <h1>
-                    <span class="count" data-target="1000000" data-format="compact">0</span>
+                    <span class="count" data-target="1000000" data-format="compact" data-duration="4000">0</span>
                 </h1>
                 <p>JOBS COMPLETED</p>
             </div>
 
             <div class="stat-item">
                 <h1>
-                    <span class="count" data-target="100" data-suffix="+">0</span>
+                    <span class="count" data-target="100" data-suffix="+" data-duration="2000">0</span>
                 </h1>
                 <p>EMPLOYEES</p>
             </div>
@@ -565,12 +565,14 @@ heroObserver.observe(hero);
         const suffix = counter.dataset.suffix || "";
         const format = counter.dataset.format;
         let current = 0;
-        const duration = 3000;
+        const duration = counter.dataset.duration || 2500;
         const start = performance.now();
 
         const update = (now) => {
             const progress = Math.min((now - start) / duration, 1);
-            current = Math.floor(progress * target);
+            //current = Math.floor(progress * target);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            current = Math.floor(eased * target);
             counter.innerText = formatNumber(current, format) + suffix;
 
             if (progress < 1) requestAnimationFrame(update);

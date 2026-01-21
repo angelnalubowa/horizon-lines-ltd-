@@ -66,7 +66,7 @@
             flex-direction: column;
             padding: 0rem 1.5rem;
             /* mobile safe */
-            max-width: 120px;
+            max-width: fit-content;
             height: 30px;
             text-align: center;
             align-content: center;

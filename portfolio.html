@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Horizon Lines</title>
+    <link rel="icon" type="image/x-icon" href="images/printer.png">
     <link rel="stylesheet" href="font-awesome/all.min.css">
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="css/portfolio.css">
@@ -60,32 +61,31 @@
         .hero-mobile{
             display: block;
         }
-        @media(min-width:768px){
+        @media(min-width:767px){
             .hero-desktop{
-                display: block;
-            }
-            .hero-mobile{
                 display: none;
             }
-            .hero-section{
+            .hero-mobile{
+                display: black;
             }
+            /* .hero-section{
+            } */
             .hero-content{
-                display: grid;
-                grid-template-columns: 2fr 3fr;
-                padding: 10rem 4rem 2rem 4rem;
-                height: fit-content;
-                gap:0;
+                padding:8rem 1rem 0 1rem;
             }
             .hero-text{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
                 padding: 0 2rem;
             }
             .hero-text h1{
                 font-size: 3rem;
-                width: 90%;
+                line-height: .9;
             }
             .hero-text p{
                 font-size: 1.8rem;
-                width: 80%;
+                width: 100%;
             }
             .hero-image{
                 height: fit-content;
@@ -95,6 +95,47 @@
                 object-fit: cover;
                 object-position: center;
                 height: 100%;
+            }
+        }
+        @media(min-width:1023px){
+            .hero-content{
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+                padding: 12rem 4rem 0rem 4rem;
+                height: fit-content;
+                align-items: normal;
+                gap:0;
+            }
+            .hero-text{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .hero-text h1{
+                font-size: 3rem;
+                width: 80%;
+                line-height: .9;
+            }
+            .hero-text p{
+                font-size: 1.5rem;
+                width: 90%;
+            }
+            .hero-image{
+                height: fit-content;
+            }
+            .hero-image img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+            }
+        }
+        @media(min-width:1439px){
+            .hero-text h1{
+                font-size: 4rem;
+            }
+            .hero-text p{
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -135,35 +176,56 @@
                 </div>
             </div>
             <div class="industry-card bg-image2">
-                <h2>Manufacturing & Industrial Companies</h2>
-                <p>High-volume, precision printing for packaging, labels, manuals, and compliance materials that meet operational standards.</p>
+                <div class="industry-card-content">
+                    <h2>Manufacturing & Industrial Companies</h2>
+                    <p>High-volume, precision printing for packaging, labels, manuals, and compliance materials that meet operational standards.</p>
+                </div>
+                
             </div>
             <div class="industry-card bg-image3">
-                <h2>FMCG & Retail Brands</h2>
-                <p>Fast-turnaround printing for packaging, labels, point-of-sale materials, and promotional prints designed for high-movement products.
-</p>
+                <div class="industry-card-content">
+                    <h2>FMCG & Retail Brands</h2>
+                    <p>Fast-turnaround printing for packaging, labels, point-of-sale materials, and promotional prints designed for high-movement products.
+                    </p>
+                </div>
+                
             </div>
             <div class="industry-card bg-image4">
-                <h2>Education Institutions</h2>
-                <p>Printing for schools, universities, and training institutions including books, exams, certificates, and branded academic materials.</p>
+                <div class="industry-card-content">
+                    <h2>Education Institutions</h2>
+                    <p>Printing for schools, universities, and training institutions including books, exams, certificates, and branded academic materials.</p>
+                </div>
+                
             </div>
             <div class="industry-card bg-image5">
-                <h2>Healthcare & Medical Facilities</h2>
-                <p>Accurate, clear printing for patient forms, medical documents, signage, and branded healthcare materials where precision is critical.</p>
+                <div class="industry-card-content">
+                    <h2>Healthcare & Medical Facilities</h2>
+                    <p>Accurate, clear printing for patient forms, medical documents, signage, and branded healthcare materials where precision is critical.</p>
+                </div>
+                
             </div>
         </div>
         <div class="industry-cards grid-2">
             <div class="industry-card bg-image6">
-                <h2>NGOs & Development Organizations</h2>
-                <p>Dependable printing for reports, publications, training materials, and awareness campaigns delivered at scale.</p>
+                <div class="industry-card-content">
+                    <h2>NGOs & Development Organizations</h2>
+                    <p>Dependable printing for reports, publications, training materials, and awareness campaigns delivered at scale.</p>
+                </div>
+                
             </div>
             <div class="industry-card bg-image7">
-                <h2>Hospitality & Tourism</h2>
-                <p>High-quality printing for menus, brochures, signage, and brand materials that enhance guest experience.</p>
+                <div class="industry-card-content">
+                    <h2>Hospitality & Tourism</h2>
+                    <p>High-quality printing for menus, brochures, signage, and brand materials that enhance guest experience.</p>
+                </div>
+                
             </div>
             <div class="industry-card bg-image8">
-                <h2>Events, Conferences & Activations</h2>
-                <p>Time-sensitive printing for banners, programs, badges, backdrops, and promotional materials under tight deadlines.</p>
+                <div class="industry-card-content">
+                    <h2>Events, Conferences & Activations</h2>
+                    <p>Time-sensitive printing for banners, programs, badges, backdrops, and promotional materials under tight deadlines.</p>
+                </div>
+                
             </div>
             <div class="industry-text">
                 <p>Whatever the industry, Horizon delivers printing businesses can depend on.</p>
@@ -183,7 +245,7 @@
                         <li>On-time delivery</li>
                         <li>Ability to handle bulk jobs</li>
                         <li>30+ years of operational experience</li>
-                        <li>Reliable custoer support</li>
+                        <li>Reliable customer support</li>
                     </ul>
                 </div>
                 <div class="retainer-hero-image">

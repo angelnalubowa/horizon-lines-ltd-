@@ -86,9 +86,35 @@
     text-align: center;
     font-size: 2rem;
 }
-@media(min-width:768px){
+@media(min-width:767px){
     .industries-section{
-        padding: 2rem 3rem;
+        padding: 2rem 1rem;
+    }
+    .grid-1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .industry-cards{
+        display: grid;
+        padding: 1rem 0;
+    }
+    .industry-card{
+        flex-direction: column;
+        display: flex;
+        padding: 1rem .5rem;
+        height: 250px;
+        width: 100%;
+    }
+    .industry-card-content{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media(min-width:1023px){
+    .industries-section{
+        padding: 2rem 1rem;
     }
     .grid-1{
         grid-template-columns: repeat(5, 1fr);
@@ -102,19 +128,33 @@
     .industry-card{
         flex-direction: column;
         display: flex;
-        padding: 1rem .5rem;
-        height: 250px;
-        width: 250px;
+        padding: .8rem .5rem;
+        height: 200px;
+        width: 100%;
     }
     .industry-card-content{
         flex-direction: column;
-        gap: .5rem;
+        gap: 10px;
+    }
+    .industry-card-content h2{
+        font-size: .9rem;
+    }
+    .industry-card-content p{
+        font-size: .6rem;
+    }
+}
+@media(min-width:1439px){
+    .industry-card-content h2{
+        font-size: 1rem;
+    }
+    .industry-card-content p{
+        font-size: .8rem;
     }
 }
 /* Retainer Section */
 .retainer-section{
     padding: 2rem;
-    background-color: rgba(var(--primary-rgb),.9);
+    background-color: rgba(var(--primary-rgb),.95);
 }
 .retainer-content{
     display: flex;
@@ -146,7 +186,7 @@
     font-family: 'Futura-Light', sans-serif;
     font-size: 1.2rem;
 }
-.retainer-hero-image{
+.retainer-hero-i{
     width: 100%;
     height: 300px;
 }
@@ -155,20 +195,41 @@
     height: 100%;
     object-fit: cover;
 }
-@media(min-width:768px){
-    /* .retainer-section{} */
+@media(min-width:767px){
+    .retainer-content h2{
+        font-size: 3rem;
+    }
+    .retainer-hero-text ul{
+        text-align: left;
+        width: 100%;
+    }
+    .retainer-hero-text ul li{
+        font-size: 2rem;
+    }
+}
+@media(min-width:1023px){
+    .retainer-section{
+        padding:2rem 1rem;
+    }
     .retainer-content{
-        gap: 2rem;        
+        gap: 1rem;        
     }
     .retainer-content h2{
         font-size: 3rem;
     }
+    .retainer-hero-text ul li{
+        font-size: 1.3rem;
+    }
     .retainer-hero{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        gap: 3rem;
     }
     .retainer-hero-image{
-        height: 350px;
+        height: 325px;
+    }
+}
+@media(min-width:1439px){
+    .retainer-hero-text ul li{
+        font-size: 1.5rem;
     }
 }

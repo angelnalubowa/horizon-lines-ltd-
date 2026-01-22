@@ -16,7 +16,6 @@
 
         footer {
             background: var(--primary-color);
-            padding: 2rem 0 0 0;
         }
 
         /* .footer-container {} */
@@ -144,7 +143,7 @@
         }
 
         .contact-card p {
-            font-family: 'Futura-Demi', sans-serif;
+            font-family: 'Futura-Book', sans-serif;
             font-size: 1.1rem;
         }
 
@@ -218,15 +217,46 @@
         .hover-underline:hover::before {
             transform: scaleX(1);
         }
-        @media(min-width:768px){
+        @media(min-width:767px){
+            .footer-row{
+                padding: 0 2rem ;
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                gap: 20px;
+            }
+            .company-desc{
+                padding:.8rem 1rem;
+            }
+            .company-desc p{
+                font-size: 1rem;
+            }
+            .footer-logo{
+                padding: 1rem 0;
+            }
+            .footer-logo h1{
+                font-size: 1.2rem;
+            }
+
+            .website-links,.company-services{
+                padding: 2rem 0 0 0;
+            }
+        }
+        @media(min-width:1023px){
             .footer-container{
-                padding: 1rem;
+                padding: 3rem 0;
             }
             .footer-row{
                 display: grid;
                 grid-template-columns: 2fr 1fr 1fr;
                 gap: 20px;
-                padding: 2rem 0;
+            }
+            .company-desc{
+                width: 80%;
+                margin: 0 auto;
+                padding: 1rem 2rem;
+            }
+            .website-links,.company-services{
+                padding: 2rem 0 0 0;
             }
             .website-links h2,.company-services h2{
                 font-size: 1.2rem;
@@ -244,7 +274,7 @@
             }
             
             .contact-text p{
-                font-size: .9rem;
+                font-size: 1rem;
             }
             .social-links{
                 order: +1;
@@ -260,7 +290,7 @@
                 grid-template-columns: 2fr 1fr 1fr;
                 gap: 90px;
             }
-
+            
             .footer-contact-row {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -280,6 +310,7 @@
                 font-size: 1.5rem;  
             }
             .company-desc {
+                width: 90%;
                 padding: 2rem 3rem;
                 gap: 30px;
             }
@@ -291,14 +322,17 @@
 
             .website-links h2,
             .company-services h2 {
-                font-size: 1.5rem;
+                font-size: 2rem;
+            }
+            .website-links ul li,.company-services ul li{
+                font-size: 1.2rem;
             }
 
             .contact-icon i {
                 font-size: 2rem;
             }
             .contact-text p{
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
             .social-links {
                 order: +1;

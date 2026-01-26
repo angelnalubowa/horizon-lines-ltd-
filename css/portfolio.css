@@ -31,6 +31,7 @@
     font-family: 'Futura-Bold', sans-serif;
     font-size: 1.3rem;
     text-align: center;
+    line-height: 1;
 }
 .industry-card p{
     font-family: 'Futura-Light', sans-serif;
@@ -128,19 +129,20 @@
     .industry-card{
         flex-direction: column;
         display: flex;
-        padding: .8rem .5rem;
+        padding: 1.5rem .5rem;
         height: 200px;
         width: 100%;
     }
     .industry-card-content{
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+        padding: 0 1rem;
     }
     .industry-card-content h2{
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .industry-card-content p{
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
 @media(min-width:1439px){
@@ -148,7 +150,7 @@
         font-size: 1rem;
     }
     .industry-card-content p{
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
 /* Retainer Section */

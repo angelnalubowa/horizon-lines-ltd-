@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         /* Hero Section */
-        .hero-section{
+        .hero-section {
             padding: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,.7), rgba(var(--primary-rgb),1)),url(images/offset2.jpg);
+            background: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(var(--primary-rgb), 1)), url(images/offset2.jpg);
             background-position: top;
             background-size: cover;
             height: fit-content;
         }
-        .hero-content{
+
+        .hero-content {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -33,109 +34,132 @@
             gap: 40px;
             height: fit-content;
         }
-        .hero-text{
+
+        .hero-text {
             text-align: left;
         }
-        .hero-text h1{
+
+        .hero-text h1 {
             font-family: 'Futura-Demi', sans-serif;
             font-size: 2.5rem;
             color: white;
         }
-        .hero-text p{
+
+        .hero-text p {
             font-family: 'Futura-Light', sans-serif;
             font-size: 1.2rem;
             color: white;
         }
-        .hero-image{
+
+        .hero-image {
             width: 100%;
             height: 210px;
         }
-        .hero-image img{
+
+        .hero-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             overflow: visible;
         }
-        .hero-desktop{
+
+        .hero-desktop {
             display: none;
         }
-        .hero-mobile{
+
+        .hero-mobile {
             display: block;
         }
-        @media(min-width:767px){
-            .hero-desktop{
+
+        @media(min-width:767px) {
+            .hero-desktop {
                 display: none;
             }
-            .hero-mobile{
+
+            .hero-mobile {
                 display: black;
             }
+
             /* .hero-section{
             } */
-            .hero-content{
-                padding:8rem 1rem 0 1rem;
+            .hero-content {
+                padding: 8rem 1rem 0 1rem;
             }
-            .hero-text{
+
+            .hero-text {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 padding: 0 2rem;
             }
-            .hero-text h1{
+
+            .hero-text h1 {
                 font-size: 3rem;
                 line-height: .9;
             }
-            .hero-text p{
+
+            .hero-text p {
                 font-size: 1.8rem;
                 width: 100%;
             }
-            .hero-image{
+
+            .hero-image {
                 height: fit-content;
             }
-            .hero-image img{
+
+            .hero-image img {
                 width: 100%;
                 object-fit: cover;
                 object-position: center;
                 height: 100%;
             }
         }
-        @media(min-width:1023px){
-            .hero-content{
+
+        @media(min-width:1023px) {
+            .hero-content {
                 display: grid;
                 grid-template-columns: 2fr 3fr;
                 padding: 12rem 4rem 0rem 4rem;
                 height: fit-content;
                 align-items: normal;
-                gap:0;
+                gap: 0;
             }
-            .hero-text{
+
+            .hero-text {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
             }
-            .hero-text h1{
-                font-size: 4rem;
+
+            .hero-text h1 {
+                font-size: 3rem;
                 width: 80%;
                 line-height: .9;
             }
-            .hero-text p{
-                font-size: 2rem;
+
+            .hero-text p {
+                font-size: 1.2rem;
                 width: 90%;
             }
-            .hero-image{
+
+            .hero-image {
                 height: fit-content;
             }
-            .hero-image img{
+
+            .hero-image img {
                 width: 100%;
                 object-fit: cover;
                 object-position: center;
                 height: 100%;
             }
         }
-        @media(min-width:1439px){
-            .hero-text h1{
+
+        @media(min-width:1439px) {
+            .hero-text h1 {
                 font-size: 4rem;
             }
-            .hero-text p{
+
+            .hero-text p {
                 font-size: 1.8rem;
             }
         }
@@ -152,19 +176,18 @@
 <body>
     <!-- Navbar -->
     <nav id="navbar"></nav>
-    
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>INDUSTRIES WE SERVE</h1>
-                <p>For over 30 years, Horizon has supported businesses across multiple industries with reliable, high-quality printing delivered on time.</p>
+                <p>For over 30 years, Horizon has supported businesses across multiple industries with reliable,
+                    high-quality printing delivered on time.</p>
             </div>
             <div class="hero-image">
-                <img class="hero-desktop" src="images/portfolio-hero-image1.png" 
-                alt="Hero Image">
-                <img class="hero-mobile" src="images/portfolio-hero-mobile.png" 
-                alt="Hero Image">
+                <img class="hero-desktop" src="images/portfolio-hero-image1.png" alt="Hero Image">
+                <img class="hero-mobile" src="images/portfolio-hero-mobile.png" alt="Hero Image">
             </div>
         </div>
     </section>
@@ -175,60 +198,68 @@
             <div class="industry-card bg-image1">
                 <div class="industry-card-content">
                     <h2>Corporate & Offices</h2>
-                    <p>We support offices with reports, stationery, branded materials, and internal documents that demand consistency and professional finish.</p>
+                    <p>We support offices with reports, stationery, branded materials, and internal documents that
+                        demand consistency and professional finish.</p>
                 </div>
             </div>
             <div class="industry-card bg-image2">
                 <div class="industry-card-content">
                     <h2>Manufacturing & Industrial Companies</h2>
-                    <p>High-volume, precision printing for packaging, labels, manuals, and compliance materials that meet operational standards.</p>
+                    <p>High-volume, precision printing for packaging, labels, manuals, and compliance materials that
+                        meet operational standards.</p>
                 </div>
-                
+
             </div>
             <div class="industry-card bg-image3">
                 <div class="industry-card-content">
                     <h2>FMCG & Retail Brands</h2>
-                    <p>Fast-turnaround printing for packaging, labels, point-of-sale materials, and promotional prints designed for high-movement products.
+                    <p>Fast-turnaround printing for packaging, labels, point-of-sale materials, and promotional prints
+                        designed for high-movement products.
                     </p>
                 </div>
-                
+
             </div>
             <div class="industry-card bg-image4">
                 <div class="industry-card-content">
                     <h2>Education Institutions</h2>
-                    <p>Printing for schools, universities, and training institutions including books, exams, certificates, and branded academic materials.</p>
+                    <p>Printing for schools, universities, and training institutions including books, exams,
+                        certificates, and branded academic materials.</p>
                 </div>
-                
+
             </div>
             <div class="industry-card bg-image5">
                 <div class="industry-card-content">
                     <h2>Healthcare & Medical Facilities</h2>
-                    <p>Accurate, clear printing for patient forms, medical documents, signage, and branded healthcare materials where precision is critical.</p>
+                    <p>Accurate, clear printing for patient forms, medical documents, signage, and branded healthcare
+                        materials where precision is critical.</p>
                 </div>
-                
+
             </div>
         </div>
         <div class="industry-cards grid-2">
             <div class="industry-card bg-image6">
                 <div class="industry-card-content">
                     <h2>NGOs & Development Organizations</h2>
-                    <p>Dependable printing for reports, publications, training materials, and awareness campaigns delivered at scale.</p>
+                    <p>Dependable printing for reports, publications, training materials, and awareness campaigns
+                        delivered at scale.</p>
                 </div>
-                
+
             </div>
             <div class="industry-card bg-image7">
                 <div class="industry-card-content">
                     <h2>Hospitality & Tourism</h2>
-                    <p>High-quality printing for menus, brochures, signage, and brand materials that enhance guest experience.</p>
+                    <p>High-quality printing for menus, brochures, signage, and brand materials that enhance guest
+                        experience.</p>
                 </div>
-                
+
             </div>
             <div class="industry-card bg-image8">
                 <div class="industry-card-content">
                     <h2>Events, Conferences & Activations</h2>
-                    <p>Time-sensitive printing for banners, programs, badges, backdrops, and promotional materials under tight deadlines.</p>
+                    <p>Time-sensitive printing for banners, programs, badges, backdrops, and promotional materials under
+                        tight deadlines.</p>
                 </div>
-                
+
             </div>
             <div class="industry-text">
                 <p>Whatever the industry, Horizon delivers printing businesses can depend on.</p>
@@ -263,4 +294,5 @@
 <script>
     AOS.init();
 </script>
+
 </html>

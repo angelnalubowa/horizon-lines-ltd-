@@ -144,6 +144,9 @@
     .industry-card-content p{
         font-size: .9rem;
     }
+    .industry-text{
+        padding: 2rem 1rem;
+    }
 }
 @media(min-width:1439px){
     .industry-card-content h2{
@@ -151,6 +154,9 @@
     }
     .industry-card-content p{
         font-size: .9rem;
+    }
+    .industry-text{
+        padding: 2rem 2rem;
     }
 }
 /* Retainer Section */

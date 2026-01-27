@@ -156,7 +156,8 @@
 /* Retainer Section */
 .retainer-section{
     padding: 2rem;
-    background-color: rgba(var(--primary-rgb),.95);
+    background-color: rgba(var(--primary-rgb),.95)
+    
 }
 .retainer-content{
     display: flex;
@@ -212,9 +213,12 @@
 @media(min-width:1023px){
     .retainer-section{
         padding:2rem 1rem;
+        height: 500px;
     }
-    .retainer-content{
-        gap: 1rem;        
+    .retainer-content{  
+        height: 100%; 
+        gap:5px; 
+        padding: 0 2rem;    
     }
     .retainer-content h2{
         font-size: 3rem;
@@ -225,13 +229,25 @@
     .retainer-hero{
         display: grid;
         grid-template-columns: 1fr 2fr;
+        height: 100%;
     }
     .retainer-hero-image{
         height: 325px;
     }
 }
 @media(min-width:1439px){
+    .retainer-section{
+        padding: 4rem 2rem;
+        height: 600px;
+    }
+    .retainer-content{}
+    .retainer-content h2{
+        font-size: 3.5rem;
+    }
     .retainer-hero-text ul li{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+    .retainer-hero-image{
+        height: 400px;
     }
 }

@@ -32,28 +32,20 @@
         /******************************************/
         .hero {
             background: linear-gradient(180deg, rgba(255, 255, 255, .8)0%, rgba(255, 255, 255, .8)100%), url(images/black-pattern.png) no-repeat center center/cover;
-
-        }
-
-        .hero-desktop {
-            display: block;
-            padding: 2rem 4rem;
-
+            padding:2rem 0;
         }
 
         .hero-container {
             width: 100%;
-            align-content: center;
-            padding: 2% 0 0 2%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            padding: var(--navbar-height) 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
         }
-
         .hero-text {
-            /* background-color: var(--light-blue); */
-            height: 90vh;
-            padding: 0.7rem 0.7rem 0.7rem 2rem;
+            padding: 0 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -62,7 +54,7 @@
 
         .hero-text h1 {
             font-family: 'Futura-Bold', sans-serif;
-            font-size: 4rem;
+            font-size: clamp(3rem, 5vw, 4rem);
             color: black;
             margin: 0;
 
@@ -91,8 +83,9 @@
         }
 
         .hero-image {
+            order:-1;
             width: 100%;
-            height: 100%;
+            height: 390px;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -126,72 +119,28 @@
         .cta-contact {
             display: none;
         }
+        
+        @media(min-width: 767px){
 
-        @media(min-width:1440px) {
-            .hero-container {
-                padding: 2% 4% 0 4%;
+        }
+        @media(min-width: 1023px){
+            .hero-container{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                gap:0;
+                padding:0 2rem;
+            }
+            .hero-text{
+                padding: 0 2rem;
+            }
+            .hero-image {
+                height:100%;
+                order:0;
             }
         }
+        @media(min-width: 1439px){
 
-        @media (max-width: 768px) {
-            .hero-desktop {
-                padding: 1rem 1rem 1rem 1rem;
-            }
-
-            .hero-container {
-                padding: 6rem 0 0 0;
-                display: flex;
-                flex-direction: column;
-                gap: 60px;
-            }
-
-            .hero-text h1 {
-                font-size: 3rem;
-            }
-
-            .hero-text a {
-                padding: .5rem 1rem;
-            }
-
-            .hero-buttons {
-                display: flex;
-                flex-direction: row;
-                align-items: start;
-                gap: 10px;
-            }
         }
-
-        @media(max-width:375px) {
-            .hero-desktop {
-                padding: 2rem 1rem;
-            }
-
-            .hero-text {
-                padding: .7rem;
-            }
-
-            .hero-text a {
-                padding: .5rem .5rem;
-            }
-        }
-
-        /*  @media (max-width:1024px) {
-            .hero-container {
-                padding: 0 0 0 0rem;
-            }
-
-            .hero-text {
-                padding: 0.7rem;
-            }
-
-            .hero-text h1 {
-                font-size: 4rem;
-            }
-
-            .hero-text li {
-                padding: 0.3rem .9rem;
-            }
-        } */
     </style>
 </head>
 
@@ -200,33 +149,30 @@
     <nav id="navbar"></nav>
     <!-- HERO SECTION-->
     <section class="hero" id="hero">
-        <div class="hero-desktop">
-            <div class="hero-container" alt="hero-image">
-                <div class="hero-text">
-                    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Print that <strong
-                            style="color: var(--secondary-color);">Moves</strong><br><strong
-                            style="color: var(--primary-color);">Brands</strong> Forward.</h1>
-                    <p data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Premium commercial printing
-                        powered by precision<br> machines, disciplined craft, and a team that
-                        understands<br> deadlines the way you do.</p>
-                    <div class="hero-buttons" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <a href="#contact" class="quote">GET A QUOTE</a>
-                        <a href="services.html" class="portfolio">SEE MORE</a>
-                    </div>
-
+        <div class="hero-container" alt="hero-image">
+            <div class="hero-text">
+                <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Print that <strong
+                        style="color: var(--secondary-color);">Moves</strong><br><strong
+                        style="color: var(--primary-color);">Brands</strong> Forward.</h1>
+                <p data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Premium commercial printing
+                    powered by precision<br> machines, disciplined craft, and a team that
+                    understands<br> deadlines the way you do.</p>
+                <div class="hero-buttons" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                    <a href="#contact" class="quote">GET A QUOTE</a>
+                    <a href="services.html" class="portfolio">SEE MORE</a>
                 </div>
-                <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="hero-image-carousel">
-                        <img src="images/index-hero1.png" class="hero-slide active" alt="" loading="eager" fetchpriority="high">
-                        <img src="images/index-hero2.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                        <img src="images/index-hero3.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                        <img src="images/index-hero4.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                        <img src="images/index-hero5.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                    </div>
+
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
+                <div class="hero-image-carousel">
+                    <img src="images/index-hero1.png" class="hero-slide active" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero2.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero3.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero4.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero5.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
                 </div>
             </div>
         </div>
-
     </section>
     <section class="about" id="about-us">
         <div class="about-content">

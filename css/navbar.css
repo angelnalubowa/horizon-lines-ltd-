@@ -2,7 +2,7 @@
         /*Navigation*/
         /******************************************/
         nav {
-            
+            height: var(--navbar-height);
             background: white;
             position: fixed;
             width: 100%;
@@ -25,7 +25,6 @@
         }
 
         .logo {
-            
             display: flex;
             flex-direction: row;
             align-items: center;

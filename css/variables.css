@@ -47,6 +47,9 @@
             --secondary-rgb: 234, 52, 48;
             --light-blue: #e9feff;
             --light-rgb:233, 254, 255;
+            
+            /* Navbar Height */
+            --navbar-height: 80px;
         }
 
         /*Repeated CSS*/

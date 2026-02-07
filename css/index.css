@@ -18,7 +18,7 @@ body{
 /*Hero*/
 /******************************************/
 .hero {
-    background: linear-gradient(180deg, rgba(255, 255, 255, .8)0%, rgba(255, 255, 255, .8)100%), url(images/black-pattern.png) no-repeat center center/cover;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .8)0%, rgba(255, 255, 255, .8)100%), url(../images/black-pattern.png) no-repeat center center/cover;
     padding:2rem 0;
 }
 
@@ -254,9 +254,7 @@ body{
         padding: 2rem 0rem;
     }
 }
-@media (max-width:1024px){
-           
-        }
+@media (max-width:1024px){}
 
 /******************************************/
 /*Services*/

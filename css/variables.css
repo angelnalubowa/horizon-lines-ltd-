@@ -3,42 +3,49 @@
             src: url('../fonts/futura-pt/FuturaCyrillicLight.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
         }
         @font-face {
             font-family: 'Futura-Medium';
             src: url('../fonts/futura-pt/FuturaCyrillicMedium.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
         }
         @font-face {
             font-family: 'Futura-Demi';
             src: url('../fonts/futura-pt/FuturaCyrillicDemi.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
         }
         @font-face {
             font-family: 'Futura-Book';
             src: url('../fonts/futura-pt/FuturaCyrillicBook.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
         }
         @font-face {
             font-family: 'Futura-Bold';
             src: url('../fonts/futura-pt/FuturaCyrillicBold.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
         }
         @font-face {
             font-family: 'Futura-ExtraBold';
             src: url('../fonts/futura-pt/FuturaCyrillicExtraBold.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
         }
         @font-face {
             font-family: 'Futura-Heavy';
             src: url('../fonts/futura-pt/FuturaCyrillicHeavy.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
         }
         :root {
             --primary-color: #283b8d;

@@ -14,7 +14,6 @@
     <meta property="og:description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
     <meta property="og:image" content="images/logo1-edited.png">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://horizonlinesltd.com">
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/service.css">
@@ -293,8 +292,15 @@
     AOS.init();
 
     /* Load components */
-    loadComponent("navbar", "components/navbar.html")
+    loadComponent("navbar", "components/navbar.html");
     loadComponent("contact", "components/footer.html");
+
+    //Mobile menu toggle function
+    function toggleMenu() {
+        // Toggle the active class on the nav-links element
+        // This will show or hide the navigation menu
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
 </script>
 
 </html>

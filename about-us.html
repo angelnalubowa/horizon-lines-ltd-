@@ -12,7 +12,6 @@
     <meta property="og:description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
     <meta property="og:image" content="images/logo1-edited.png">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://horizonlinesltd.com">
     
     <link rel="icon" type="image/x-icon" href="images/logo1-edited.png">
 
@@ -22,7 +21,7 @@
     <link href="font-awesome/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     
-    <script src="js/main.js" defer></script>
+    <!-- <script src="js/main.js" defer></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/components.js"></script>
     
@@ -164,7 +163,14 @@
 
     /* Load components */
     loadComponent("contact", "components/footer.html");
-    loadComponent("navbar","components/navbar.html")
+    loadComponent("navbar","components/navbar.html");
+
+    //Mobile menu toggle function
+    function toggleMenu() {
+        // Toggle the active class on the nav-links element
+        // This will show or hide the navigation menu
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
 </script>
 
 </html>

@@ -1,3 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(var(--primary-rgb), 1)), url(images/offset2.jpg);
+    background-position: top;
+    background-size: cover;
+    height: fit-content;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 2rem 0rem 2rem;
+    gap: 40px;
+    height: fit-content;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-family: 'Futura-Demi', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero-text p {
+    font-family: 'Futura-Light', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: 210px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+}
+
+.hero-desktop {
+    display: none;
+}
+
+.hero-mobile {
+    display: block;
+}
+
+@media(min-width:767px) {
+    .hero-desktop {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: black;
+    }
+
+    /* .hero-section{
+    } */
+    .hero-content {
+        padding: 8rem 1rem 0 1rem;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        line-height: .9;
+    }
+
+    .hero-text p {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .hero-image {
+        height: fit-content;
+    }
+
+    .hero-image img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+    }
+}
+
+@media(min-width:1023px) {
+    .hero-content {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        padding: 12rem 4rem 0rem 4rem;
+        height: fit-content;
+        align-items: normal;
+        gap: 0;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        width: 80%;
+        line-height: .9;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .hero-image {
+        height: fit-content;
+    }
+
+    .hero-image img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+    }
+}
+
+@media(min-width:1439px) {
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-text p {
+        font-size: 1.8rem;
+    }
+}
+
 /* Industries Section */
 .industries-section{
     padding: 2rem;

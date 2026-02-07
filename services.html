@@ -4,107 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Horizon Lines</title>
+    <title>SERVICES | Horizon Lines</title>
+
+    <meta name="description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+
     <link rel="icon" type="image/x-icon" href="images/logo1-edited.png">
-    <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        html {
-            scroll-behavior: smooth;
-            overflow-x: hidden !important;
-        }
+    <meta property="og.title" content="Horizon Lines Ltd">
+    <meta property="og:description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+    <meta property="og:image" content="images/logo1-edited.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://horizonlinesltd.com">
 
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden !important;
-        }
-
-        /*Services*/
-        .services-hero {
-            padding: 8rem 2rem 1rem 2rem;
-            height: fit-content;
-        }
-
-        .services-hero-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .services-hero-text {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .services-hero-text h1 {
-            font-family: 'Futura-Bold', sans-serif;
-            font-size: clamp(2.5rem, calc(2vw + 1.5rem), 4rem);
-            color: black;
-            line-height: 1.2;
-        }
-
-        .services-hero-text p {
-            color: black;
-            font-family: 'Futura-Light', sans-serif;
-            font-size: clamp(1.2rem, calc(1vw + .5rem), 1.8rem);
-            text-align: justify;
-            line-height: 1.6;
-            width: 90%;
-        }
-
-        .services-hero-image {
-            height: 100%;
-            width: 100%;
-        }
-
-        .services-hero-image img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
-
-        @media(min-width:768px) {
-            .services-hero {
-                padding: 8rem 0rem 0 8rem;
-                height: 90vh;
-            }
-
-            .services-hero-content {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 0px;
-            }
-
-            .services-hero-text p {
-                width: 80%;
-            }
-
-            .services-hero-image {
-                padding: 4rem 0 2rem 0;
-            }
-
-            .services-hero-image img {
-                object-fit: cover;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="font-awesome/all.min.css">
     <link rel="stylesheet" href="css/variables.css">
-    <script src="js/main.js"></script>
-    <script src="js/components.js"></script>
-    <script>
-        loadComponent("navbar", "components/navbar.html")
-        loadComponent("contact", "components/footer.html");
-    </script>
+    <link rel="stylesheet" href="css/service.css">
+
+    <link rel="stylesheet" href="font-awesome/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    
+    <script src="js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/components.js"></script>  
 </head>
 
 <body class="service-page">
@@ -367,9 +288,13 @@
     <!--Footer-->
     <div id="contact"></div>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    /* Initialize AOS */
     AOS.init();
+
+    /* Load components */
+    loadComponent("navbar", "components/navbar.html")
+    loadComponent("contact", "components/footer.html");
 </script>
 
 </html>

@@ -1,149 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Horizon Lines</title>
+    <title>HOME | Horizon Lines</title>
+
+    <meta name="description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+
     <link rel="icon" type="image/x-icon" href="images/logo1-edited.png">
-    <link rel="stylesheet" href="css/index.css">
+
+    <meta property="og.title" content="Horizon Lines Ltd">
+    <meta property="og:description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+    <meta property="og:image" content="images/logo1-edited.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://horizonlinesltd.com">
+
     <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/index.css" >
+    
     <link rel="stylesheet" href="font-awesome/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <style>
-        html {
-            scroll-behavior: smooth;
-            overflow-x: hidden !important;
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden !important;
-        }
-
-        /******************************************/
-        /*Hero*/
-        /******************************************/
-        .hero {
-            background: linear-gradient(180deg, rgba(255, 255, 255, .8)0%, rgba(255, 255, 255, .8)100%), url(images/black-pattern.png) no-repeat center center/cover;
-            padding:2rem 0;
-        }
-
-        .hero-container {
-            width: 100%;
-            padding: var(--navbar-height) 0 0 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
-        .hero-text {
-            padding: 0 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .hero-text h1 {
-            font-family: 'Futura-Bold', sans-serif;
-            font-size: clamp(3rem, 5vw, 4rem);
-            color: black;
-            margin: 0;
-        }
-
-        .hero-text p {
-            font-family: 'Futura-Light', sans-serif;
-            font-size: 1.5rem;
-            color: black;
-        }
-
-        .hero-text a {
-            font-family: 'Futura-Light', sans-serif;
-            font-weight: bolder;
-            text-decoration: none;
-            color: white;
-            padding: 0.5rem 2rem;
-        }
-
-        .quote {
-            background-color: var(--secondary-color);
-        }
-
-        .portfolio {
-            background-color: var(--primary-color);
-        }
-
-        .hero-image {
-            order:-1;
-            width: 100%;
-            height: 390px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .hero-img {
-            height: auto;
-            width: 100%;
-        }
-        .hero-image-carousel {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .hero-slide {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* match your current behavior */
-            opacity: 0;
-            transition: opacity 1.2s ease-in-out;
-        }
-
-        .hero-slide.active {
-            opacity: 1;
-        }
-
-        .cta-contact {
-            display: none;
-        }
-        
-        @media(min-width: 767px){
-
-        }
-        @media(min-width: 1023px){
-            .hero{
-                padding: calc(var(--navbar-height) + 3rem) 0;
-            }
-            .hero-container{
-                display:grid;
-                grid-template-columns: 1fr 1fr;
-                gap:0;
-                padding:0 3rem;
-            }
-            .hero-text{
-                padding: 0 2rem;
-            }
-            .hero-image {
-                height:100%;
-                order:0;
-            }
-        }
-        @media(min-width: 1439px){
-
-        }
-    </style>
+    <script src="js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/components.js"></script>
 </head>
 
 <body>
@@ -168,10 +49,10 @@
             <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
                 <div class="hero-image-carousel">
                     <img src="images/index-hero1.png" class="hero-slide active" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero2-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero3-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero4-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero5-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero2-1.png" class="hero-slide" alt="" loading="lazy">
+                    <img src="images/index-hero3-1.png" class="hero-slide" alt="" loading="lazy">
+                    <img src="images/index-hero4-1.png" class="hero-slide" alt="" loading="lazy">
+                    <img src="images/index-hero5-1.png" class="hero-slide" alt="" loading="lazy">
                 </div>
             </div>
         </div>
@@ -472,19 +353,17 @@
     <div id="contact"></div>
 
 
-    <script src="js/main.js"></script>
+    
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    /* AOS */
     AOS.init();
-</script>
 
-<script src="js/components.js"></script>
-<script>
+    /* Load components */
     loadComponent("navbar", "components/navbar.html");
     loadComponent("contact", "components/footer.html");
-</script>
-<script>
+
+    /* Hero Slider */
     window.addEventListener("load", () => {
         const slides = document.querySelectorAll(".hero-slide");
         let current = 0;
@@ -501,16 +380,15 @@
 
     const hero = document.querySelector(".hero");
 
-const heroObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) clearInterval(interval);
-    });
-}, { threshold: 0.2 });
+    const heroObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) clearInterval(interval);
+        });
+    }, { threshold: 0.2 });
 
-heroObserver.observe(hero);
-</script>
+    heroObserver.observe(hero);
 
-<script>
+    /* Counters */
     const counters = document.querySelectorAll(".count");
 
     const formatNumber = (value, format) => {

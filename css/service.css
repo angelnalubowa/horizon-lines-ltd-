@@ -1,3 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+/*Services*/
+.services-hero {
+    padding: 8rem 2rem 1rem 2rem;
+    height: fit-content;
+}
+
+.services-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services-hero-text h1 {
+    font-family: 'Futura-Bold', sans-serif;
+    font-size: clamp(2.5rem, calc(2vw + 1.5rem), 4rem);
+    color: black;
+    line-height: 1.2;
+}
+
+.services-hero-text p {
+    color: black;
+    font-family: 'Futura-Light', sans-serif;
+    font-size: clamp(1.2rem, calc(1vw + .5rem), 1.8rem);
+    text-align: justify;
+    line-height: 1.6;
+    width: 90%;
+}
+
+.services-hero-image {
+    height: 100%;
+    width: 100%;
+}
+
+.services-hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media(min-width:768px) {
+    .services-hero {
+        padding: 8rem 0rem 0 8rem;
+        height: 90vh;
+    }
+
+    .services-hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+    }
+
+    .services-hero-text p {
+        width: 80%;
+    }
+
+    .services-hero-image {
+        padding: 4rem 0 2rem 0;
+    }
+
+    .services-hero-image img {
+        object-fit: cover;
+    }
+}
+
+
 /****************************************/
 /*Services*/
 /****************************************/

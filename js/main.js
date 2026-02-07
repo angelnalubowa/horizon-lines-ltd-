@@ -4,7 +4,7 @@
         // This will show or hide the navigation menu
         document.querySelector('.nav-links').classList.toggle('active');
     }
-    /* Slider logic + animations */
+/* Slider logic + animations */
     const carousel = document.getElementById('carousel');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');

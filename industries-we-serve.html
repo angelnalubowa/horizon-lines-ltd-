@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDUSTRIES WE SERVE | HORIZON LINES LTD</title>
+
+    <meta name="description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+
+    <link rel="icon" type="image/x-icon" href="images/logo1-edited.png">
+
+    <meta property="og.title" content="Horizon Lines Ltd">
+    <meta property="og:description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+    <meta property="og:image" content="images/logo1-edited.png">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <link rel="stylesheet" href="font-awesome/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    
+    <script src="js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/components.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar"></nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>INDUSTRIES WE SERVE</h1>
+                <p>For over 30 years, Horizon has supported businesses across multiple industries with reliable,
+                    high-quality printing delivered on time.</p>
+            </div>
+            <div class="hero-image">
+                <img class="hero-desktop" src="images/portfolio-hero-image1.png" alt="Hero Image" loading="eager" fetchpriority="high">
+                <img class="hero-mobile" src="images/portfolio-hero-mobile.png" alt="Hero Image" loading="eager" fetchpriority="high">
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries-section">
+        <div class="industry-cards grid-1">
+            <div class="industry-card bg-image1">
+                <div class="industry-card-content">
+                    <h2>Corporate & Offices</h2>
+                    <p>We support offices with reports, stationery, branded materials, and internal documents that
+                        demand consistency and professional finish.</p>
+                </div>
+            </div>
+            <div class="industry-card bg-image2">
+                <div class="industry-card-content">
+                    <h2>Manufacturing & Industrial Companies</h2>
+                    <p>High-volume, precision printing for packaging, labels, manuals, and compliance materials that
+                        meet operational standards.</p>
+                </div>
+
+            </div>
+            <div class="industry-card bg-image3">
+                <div class="industry-card-content">
+                    <h2>FMCG & Retail Brands</h2>
+                    <p>Fast-turnaround printing for packaging, labels, point-of-sale materials, and promotional prints
+                        designed for high-movement products.
+                    </p>
+                </div>
+
+            </div>
+            <div class="industry-card bg-image4">
+                <div class="industry-card-content">
+                    <h2>Education Institutions</h2>
+                    <p>Printing for schools, universities, and training institutions including books, exams,
+                        certificates, and branded academic materials.</p>
+                </div>
+
+            </div>
+            <div class="industry-card bg-image5">
+                <div class="industry-card-content">
+                    <h2>Healthcare & Medical Facilities</h2>
+                    <p>Accurate, clear printing for patient forms, medical documents, signage, and branded healthcare
+                        materials where precision is critical.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="industry-cards grid-2">
+            <div class="industry-card bg-image6">
+                <div class="industry-card-content">
+                    <h2>NGOs & Development Organizations</h2>
+                    <p>Dependable printing for reports, publications, training materials, and awareness campaigns
+                        delivered at scale.</p>
+                </div>
+
+            </div>
+            <div class="industry-card bg-image7">
+                <div class="industry-card-content">
+                    <h2>Hospitality & Tourism</h2>
+                    <p>High-quality printing for menus, brochures, signage, and brand materials that enhance guest
+                        experience.</p>
+                </div>
+
+            </div>
+            <div class="industry-card bg-image8">
+                <div class="industry-card-content">
+                    <h2>Events, Conferences & Activations</h2>
+                    <p>Time-sensitive printing for banners, programs, badges, backdrops, and promotional materials under
+                        tight deadlines.</p>
+                </div>
+
+            </div>
+            <div class="industry-text">
+                <p>Whatever the industry, Horizon delivers printing businesses can depend on.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Retainer section -->
+    <section class="retainer-section">
+        <div class="retainer-content">
+            <h2>Why Clients Stay With Horizon</h2>
+            <div class="retainer-hero">
+                <div class="retainer-hero-text">
+                    <ul>
+                        <li>Consistent print quality</li>
+                        <li>On-time delivery</li>
+                        <li>Ability to handle bulk jobs</li>
+                        <li>30+ years of operational experience</li>
+                        <li>Reliable customer support</li>
+                    </ul>
+                </div>
+                <div class="retainer-hero-image">
+                    <img src="images/retainer-hero-image1.png" alt="Retainer Hero Image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact"></footer>
+
+    <!-- Whatsapp Button -->
+    <div id="whatsapp-button"></div>
+</body>
+<script>
+    /* Initialize AOS */
+    AOS.init();
+
+    /* Load components */
+    loadComponent("navbar", "components/navbar.html");
+    loadComponent("contact", "components/footer.html");
+    loadComponent("whatsapp-button","components/whatsapp.html");
+
+    //Mobile menu toggle function
+    function toggleMenu() {
+        // Toggle the active class on the nav-links element
+        // This will show or hide the navigation menu
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+</script>
+
+</html>
